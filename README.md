@@ -1,26 +1,38 @@
+TODO: UPDATE BASHRC FILE
+ - change `labs` alias
+
+
 Howdy neighbor. Have you heard the news about WSL2? As of June 2020, WSL is available to the general public. I figured this would be a good opportunity to share my findings with you, the general public. But more specifically, Flatiron Students using WSL. 
 
 ## Table of Contents:
 1. [Updating and Configuring Windows 10](#updating-and-configuring-windows-10) 
-2. Enabling Windows Subsystem for Linux (WSL) && Virtual Machine Platform
-3. Installing Ubuntu
-4. Upgrading to WSL Packages and Ubuntu Version
-5. Flatiron Local Environment Set Up
-6. [Visual Studio Code](#vscode)vscode
-6. Install Ruby Version Manager
-7. Configure Git
-8. Node Version Manager
+2. [Enabling Windows Subsystem for Linux (WSL) && Virtual Machine Platform](#enable-wsl2)
+3. [Installing Ubuntu](#install-ubuntu)
+4. [Upgrading to WSL Packages and Ubuntu Version](#upgrade-wsl)
+5. [Flatiron Local Environment Set Up](#flatiron-tools)
+6. [Install Ruby Version Manager](#rvm)
+6. [Gem Installations](#gems)
+
+7. [Configure Git](#git)
+8. [Node Version Manager](#nvm)
+6. [Visual Studio Code](#vscode)
 7. [Generating a SSH Key](#ssh)
+[Updating Learn Config](#learn-config)
+[Creating Flatiron Folders](#labs-directory)
+[Adding Flatiron Customization To Your Terminal](#customization)
 
+<br/>
 
+---
+<br/>
 
 ## <a name="updating-and-configuring-windows-10"></a>Updating and Configuring Windows 10
 
 1. Make sure to run: [Windows Update Assistant](https://www.microsoft.com/en-us/software-download/windows10ISO). When the update is complete, your system build should be greater than 1900. Please verify this is true before continuing.
 
-<br>
 
-## Enabling Windows Subsystem for Linux (WSL) && Virtual Machine Platform
+
+## Enabling Windows Subsystem for Linux (WSL) && Virtual Machine Platform <a name="enable-wsl2"></a>
 
 Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, to start off, we need to enable it!
 
@@ -48,38 +60,36 @@ Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, t
 <br>
 
 
-## Installing Ubuntu
+## Installing Ubuntu <a name="install-ubuntu"></a>
 
 1. Open up Microsoft Store. Search for "Ubuntu"
 
-2. Choose "Ubuntu" (not 16.04 LTS, 18.04 LTS, or 20.04LTS)
+2. Choose "Ubuntu" (do NOT choose 16.04 LTS, 18.04 LTS, or 20.04LTS)
 
     ![ubuntu choice in microsoft store](https://curriculum-content.s3.amazonaws.com/setup-instructions/ubuntu-choice.png)
 
 3. Search for, and open the newly installed Ubuntu application.
 
 4. Choose a username -- I suggest picking a really simple username (like a short nickname).
-<div style="display: block; margin: auto; text-align: center; border-style: solid; border-color: red; border-width: 1px; border-radius: 10px; padding: 20px; width: 70%; align: center; padding: 0; padding-top: 10px;">
-<span style="color: red; font-size: 1.3em;">NOTE:</span>
-<span style="text-align: left;">
 
+<br/>
+
+<span style="color:red;"> **NOTE:** </span>
 -  Ubuntu will not accept capital letters in a username
 -  Ubuntu will not accept numbers at the start of a username
-</span>
-</div>
 
+<br/>
 
 5. Choose a password -- I suggest picking a really really simple password.
 
-<div style="display: block; margin: auto; text-align: center; border-style: solid; border-color: red; border-width: 1px; border-radius: 10px; padding: 20px; width: 70%; align: center; padding: 0; padding-top: 10px;">
-<span style="color: red; font-size: 1.3em;">NOTE:</span>
-<span style="text-align: left;">
+<br/>
 
+<span style="color:red;"> **NOTE:** </span>
 - When you start typing a password, it will look as though nothing is happening. Thats totally normal, it's just a security feature. 
 - Type whatever password you would like, and press enter.
 - It will prompt you to confirm your password, retype the same password and hit enter.
-</span>
-</div>
+
+<br/>
 
 Once you have set up a username and password, you should return to a normal bash prompt (what does even mean!?). It should look something like this:
 
@@ -87,7 +97,7 @@ TODO: ENTER AN EXAMPLE OF COMMAND PROMPT HERE!!
 
 <br>
 
-## Upgrading to WSL Packages and Ubuntu Version (via Command Prompt)
+## </a>Upgrading to WSL Packages and Ubuntu Version (via Command Prompt as Admin) <a name="upgrade-wsl">
 
 At this point, you've already install WSL1, we just need to run a few commands to update it to WSL2. The next few commands are a little quirky, but, extremely important.
 
@@ -109,30 +119,22 @@ This command will change your version of Ubuntu from 1, to 2.
 
 Annnddd That's it for WSL2 you _should_ be good to go on your WSL2 installation. Let's move on to our Learn Local Environment installation.
 
-<br>
 
-## <div style="text-align:center">• &nbsp;  Water Break &nbsp;  • </div> 
-<div style="text-align:center"> Take a moment to stretch a little, fix your posture, hydrate a bit. </div>
+<br/>
 
-<br>
-<br>
-
-## Flatiron Local Environment Set Up
+## Flatiron Tools <a name="flatiron-tools"></a>
 
 Okay, so now we can start setting up our Ubuntu system for Flatiron stuff!
 
-1. Open Ubuntu and run the following commands to make sure packages in your Ubuntu system are up to date:
-
-    ```
-    sudo apt-get update  
-    ```
+1. Run: &nbsp; &nbsp; `sudo apt-get update` <br/>
+Run this command in your Ubuntu terminal. This will make sure your currently installed packages in your Ubuntu system are up to date.
 
 2. Then run the following command to install a few important packages. (copy the entire block of code)
 
     ```
     sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev libpq-dev libgdbm-dev libncurses5-dev automake libtool bison gnupg postgresql postgresql-contrib
     ```
-### Ruby Version Manager
+### Ruby Version Manager <a name="rvm"></a>
 
 Next, we'll install [Ruby Version Manager](https://github.com/rvm/ubuntu_rvm), also known as RVM.
 
@@ -151,39 +153,36 @@ I've purposefully listed commands 3 through 7 separately. Do not run them all at
 Moving right along, let's set up the ruby version compatible with Flatiron labs, we want to
   download ruby 2.6.1 and set it as our default:
 
-8. Run: &nbsp; &nbsp;  `rvm install "ruby-2.6.1`
+8. Run: &nbsp; &nbsp;  `rvm install 2.6.1` <br/>
+This will install Ruby version 2.6.1, which is what Flatiron uses for its curriculum.
 
 9. Once that's complete run: &nbsp; &nbsp; `rvm use 2.6.1 --default` <br>
 This will set Ruby version 2.6.1 to be our default Ruby. 
 
 
-### Gem Installation
+### Gem Installations <a name="gems"></a>
 
 10. Run: &nbsp; &nbsp;  `gem install bundler` <br>
 This will install a Ruby gem named [Bundler](https://rubygems.org/gems/bundler). (follow the hyperlink if you are curious as to what Bundler does)
 
-11. Run: &nbsp; &nbsp;  `gem install learn-co` <br>
+11. Run: &nbsp; &nbsp;  `gem install learn-co -v 3.9.6` <br>
 This will allow you to use commands like "*learn open*", "*learn test*", and "*learn submit*". For more information on the [Learn gem](https://rubygems.org/gems/learn-co), follow that hyperlink! 
 
-<div style="display: block; margin: auto; text-align: center; border-style: solid; border-color: red; border-width: 1px; border-radius: 10px; padding: 20px; width: 70%; align: center; padding: 0; padding-top: 10px;">
-<span style="color: red; font-size: 1.3em;">NOTE:</span>
-<span style="text-align: left;">
 
-    After installing the Learn gem, you will get a weird error that looks something like:
+<span style="color:red;"> **NOTE:** </span> <br/>
+After installing the Learn gem, you will get a weird error that looks something like:
     
-
 ```
-    RDoc is not a full Ruby parser and will fail when fed invalid ruby programs.
+  RDoc is not a full Ruby parser and will fail when fed invalid ruby programs.
 
-    The internal error was:
-        (NoMethodError) undefined method `[]' for nil:NilClass
-        ERROR:  While executing gem ... (NoMethodError)
-        undefined method `[]' for nil:NilClass
+  The internal error was:
+      (NoMethodError) undefined method `[]' for nil:NilClass
+      ERROR:  While executing gem ... (NoMethodError)
+      undefined method `[]' for nil:NilClass
 ```
 
-    This error is okay; it is the only error I will suggest ignoring!
-</span> 
-</div>
+This error is okay; it is the only error I will suggest ignoring!
+
 
     Before we continue, let's configure our new installed learn-co gem. We'll do part of the configuration now, and another part later! 
 
@@ -192,7 +191,7 @@ This will allow you to use commands like "*learn open*", "*learn test*", and "*l
     - Next run: &nbsp; &nbsp;  `learn whoami` <br>
     That last command will ask you to to retrieve some information and bring it back to terminal. That information can be found on your [learn.co](https://www.learn.co/) profile page. So, head to [learn.co](https://www.learn.co/), click on your profile picture in the top right, then click on the "**Your Profile**" link. On your profile page, scroll to the bottom and copy your OAuth token. YOU ONLY NEED TO COPY EVERYTHING AFTER "OAuth token:". For example, mine looks like this:
   ```
-  9cd7da7faf8d978cb613008bdb56e4fc2d6642sdfds91eb70b5d8d3b2820fd91
+  9cd7da7faf8d978cb613008bdb56e4fc2dsdfs642sdfds91eb70b5d8d3b2820fd91
   ```
 
     - Copy your token and paste it into terminal. <br>
@@ -200,7 +199,7 @@ This will allow you to use commands like "*learn open*", "*learn test*", and "*l
 
 
 12. Run: &nbsp; &nbsp;  `gem install pry` <br>
-This will install the lovely debugging tool [Pry](https://rubygems.org/gems/pry). Seriously ask yourself, where would you be with out [Pry](https://rubygems.org/gems/pry)??
+This will install the lovely debugging tool [Pry](https://rubygems.org/gems/pry). Seriously ask yourself, where would you be with out [Pry](https://rubygems.org/gems/pry).
 
 13. Run: &nbsp; &nbsp;  `gem install rails` <br>
 As if [Rails](https://rubygems.org/gems/rails) needs an introduction! (but just incase, follow the hyperlink!)
@@ -210,10 +209,9 @@ As if [Rails](https://rubygems.org/gems/rails) needs an introduction! (but just 
 
 That should be all for necessary gems. Let's move on to configuring our version control! 
 
+<br/>
 
-<br>
-
-### Configure Git
+### Configure Git<a name="git"></a>
 
 15. Run: &nbsp; &nbsp;  `git config --global color.ui true` <br>
 This (and the next 2 commands) will set up git in your system. When you enter these commands, your terminal will not say anything -- don't worry, it definitely worked!
@@ -237,7 +235,7 @@ You are essentially repeating the same process, but with the email address tied 
 
 <br>
 
-### Node Version Manager
+### Node Version Manager <a name="nvm"></a>
 [Node Version Manager](https://www.keycdn.com/blog/node-version-manager#:~:text=What%20is%20Node%20Version%20Manager,via%20the%20command%20line%20interface.) is a tool that allows programmers to seamlessly switch between different versions of Node. I would say its a kin to Ruby Version Manager, but for Node. [Node](https://www.codecademy.com/articles/what-is-node) allows developers to write JavaScript code that runs directly in a computer process itself instead of in a browser.
 
 
@@ -253,37 +251,35 @@ This will install Node.JS!
 
 <br/>
 
-## <div style="text-align:center">• &nbsp;  Water Break &nbsp;  • </div> 
-<div style="text-align:center"> Take a moment to close your eyes, focus on your breathing, hydrate a bit. </div>
+---
+
+## Water Break
+Take a moment to close your eyes, focus on your breathing, maybe even hydrate a bit.
+
+---
 
 <br/>
 
-## <a name="vscode"></a>Visual Studio Code
+## Visual Studio Code <a name="vscode"></a>
 
 There are plenty of text editors out there. As of today 8.1.2020, do yourself a favor and just use VSCode.
 
 1. <a href="https://code.visualstudio.com/download" target="_blank">Follow this link to download VSCode</a>. Choose the Windows download, not the Linux download. Any required Linux downloads will be done via the Ubuntu terminal, and everything else should be downloaded for your Windows OS.
 
-<div style="display: block; margin: auto; text-align: center; border-style: solid; border-color: red; border-width: 1px; border-radius: 10px; padding: 20px; width: 70%; align: center; padding: 0; padding-top: 10px;">
-<span style="color: red; font-size: 1.3em;">NOTE:</span>
-
-<span style=""></span>
+<span style="color:red;"> NOTE: </span>
 
 As VSCode is installing, make sure to check all check boxes so that it installs for your entire system.
-</span>
-</div>
-
 
 2. To configure your Ubuntu terminal to be available in VSCode:
 
     - open up VSCode
-    - open the Command Palette via `F1` or `Ctrl`+`Shift`+`p`
+    - open the Command Palette via `F1` or &nbsp; `Ctrl` &nbsp; + &nbsp; `Shift` &nbsp; + &nbsp; `p`
     - begin typing the following: `Terminal: Select Default Shell`  until you
       see it. Select that option.
 
     ![command palette](https://curriculum-content.s3.amazonaws.com/setup-instructions/default-shell.png)  
 
-    - Once you select it, a few options will pop up. You want to select **WSL**.
+    - Once you select it, a few options will pop up. You want to select **WSL Bash C:\WINDOWS\System32\wsl.exe**.
 
     ![WSL Terminal](https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-bash-selection.png)
 
@@ -294,7 +290,7 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
 
 <br/>
 
-## <a name="ssh"></a>SSH
+## Generating a SSH Key <a name="ssh"></a>
 
   You can either communicate with your remote repositories via HTTPS or SSH.
   Let's use SSH so you will not have to authenticate with
@@ -324,7 +320,7 @@ You will know the process is complete once you have some randomly generated ASCI
 
 6. Click "*Add SSH key*", and that's all! Your ssh key has been generated on your computer, and linked to Github! Yeth!
 
-<br>
+<br/>
 
 
 
@@ -337,70 +333,82 @@ You will know the process is complete once you have some randomly generated ASCI
 
 
 
+## Updating Learn Config <a name="learn-config"></a>
+First things first, let's completely close VSCode, and Ubuntu. Then, let's re-open only Ubuntu.
+
+First run `cd /mnt/c/ && echo %USERPROFILE%` This should tell you your Windows 10 username. 
+
+1. Run: &nbsp; &nbsp; `cd ~/.learn-config`
+Run this command in Ubuntu -- It _should_ open a `.learn-config` config file in VSCode
+
+2. You want to update this file so that it looks EXACTLY the same as below (except for YOUR-WINDOWS-USERNAME of course)
+```
+  ---
+  :learn_directory: "/mnt/c/Users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
+  :editor: code
+```
+3. Save this file, and close it.
+
+<br/>
+
+## Creating Flatiron Folders <a name="labs-directory"></a>
+
+You'll notice that we set up our `.learn-config` file earlier with a path
+destination of `/mnt/c/users/<your_windows_username>/dev/flatiron/labs`. The
+`.bashrc` file we just downloaded gives us a really nice way to access that
+folder quickly by just typing in `labs` when we pull up our WSL terminal (or
+anytime you want to access that folder - it doesn't matter what directory you
+are currently in when you type it). In order for this to work, we need to make
+sure that these directories exist. To do this, begin by navigating to your
+`windows home` directory:
+
+```
+cd /mnt/c/users/your_windows_username
+```
+
+Now, let's make the appropriate files. Run these one at a time, and do it
+without copying and pasting. Remember the basic bash commands: `cd` changes
+directories to whatever folder you type in and `mkdir` creates a new directory
+which will be a subdirectory of the current directory location of your terminal.
+
+
+`mkdir development && mkdir development/flatiron && mkdir development/flatiron/labs && cd ~`
+
+Now you have the directories you need, and you should have seen yourself
+navigating down your new file tree as you made each new directory and then
+`cd`'d into it.
+
+Now, `learn open` should work seamlessly by adding your most current lab to the
+`labs` directory we just made.
 
 
 
+## Adding A Flatiron Customization To Your Terminal<a name="customization"></a>
 
+Start out by making a backup for your `.bashrc`
 
+```shell
+mv .bashrc .bashrc.bak
+```
 
+We will want a tool for converting Windows ending to Unix endings for our new
+`.bashrc`
 
+```shell
+sudo apt-get install dos2unix
+```
 
+download the new `.bashrc`
 
+```shell
+curl -R "https://raw.githubusercontent.com/Enoch2k2/flatiron-wsl-bashrc/master/.bashrc" >> $HOME/.bashrc
+```
 
+We'll use our converter to convert our bashrc to use the right unix endings:
 
-
-
-
-
-
-
-
-
-
-## Updating Learn Config
-
-1. Update your .learn-config
-
-- Open the WSL terminal. You can access the terminal through VS Code now, or you
-  can open a separate terminal by typing `wsl` into the Window Search Bar.
-  Alternatively, you can also press the `Windows` and `R` keys (for run), and
-  entering `wsl`.
-
-- Travel to your Linux home directory by typing `cd`, you can change your
-  `.learn-config` by typing:
-
-    ```shell
-    nano .learn-config
-    ```
-
-- and customizing where you want the `learn open` command to save labs, and
-  setting your editor to VSCode. Here's what it should look like:
-
-    ```
-    ---
-    :learn_directory: "/mnt/c/users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
-    :editor: code
-    ```
-
-- You save a file you have modified in `nano` by following the directions at the
-  bottom of the screen: click `Ctrl`+`X` and then `y` and then `Enter` to save
-  your changes.
-
-- If you feel uncomfortable with these commands, check out the basic Linux
-  commands link below in the resources.
-
-
-
-
-
-
-
-
-
-
-
-
-
+```shell
+dos2unix .bashrc
+```
 
 
 
@@ -449,109 +457,26 @@ where Microsoft connected your Linux to your Windows machine:
 
 So, you can get there from your starting point by typing:
 
-```shell
-cd /mnt/c/users/your_windows_username
+```
+cd /mnt/c/users/YOUR-WINDOWS-USERNAME
 ```
 
 or
 
-```shell
-cd ../../mnt/c/users/your_windows_username
+```
+cd ../../mnt/c/users/YOUR-WINDOWS-USERNAME
 ```
 
 Remember, put all of your stuff in your windows directories! That way, you have
 access to it via your Linux Terminal or your Windows OS, and your VSCode editor
 can open to the correct location when you use
 
-```shell
+```
 code .
 ```
 
 (if you are in your Linux file system, VSCode will open, but not to the right spot).
 
-## Adding A Flatiron Customization To Your Terminal
-
-Start out by making a backup for your `.bashrc`
-
-```shell
-mv .bashrc .bashrc.bak
-```
-
-We will want a tool for converting Windows ending to Unix endings for our new
-`.bashrc`
-
-```shell
-sudo apt-get install dos2unix
-```
-
-download the new `.bashrc`
-
-```shell
-curl -R "https://raw.githubusercontent.com/Enoch2k2/flatiron-wsl-bashrc/master/.bashrc" >> $HOME/.bashrc
-```
-
-We'll use our converter to convert our bashrc to use the right unix endings:
-
-```shell
-dos2unix .bashrc
-```
-
-## Set up a directory for all of your labs
-
-You'll notice that we set up our `.learn-config` file earlier with a path
-destination of `/mnt/c/users/<your_windows_username>/dev/flatiron/labs`. The
-`.bashrc` file we just downloaded gives us a really nice way to access that
-folder quickly by just typing in `labs` when we pull up our WSL terminal (or
-anytime you want to access that folder - it doesn't matter what directory you
-are currently in when you type it). In order for this to work, we need to make
-sure that these directories exist. To do this, begin by navigating to your
-`windows home` directory:
-
-```shell
-cd /mnt/c/users/your_windows_username
-```
-
-Now, let's make the appropriate files. Run these one at a time, and do it
-without copying and pasting. Remember the basic bash commands: `cd` changes
-directories to whatever folder you type in and `mkdir` creates a new directory
-which will be a subdirectory of the current directory location of your terminal.
-
-```shell
-mkdir dev
-cd dev
-mkdir flatiron
-cd flatiron
-mkdir labs
-```
-
-Now you have the directories you need, and you should have seen yourself
-navigating down your new file tree as you made each new directory and then
-`cd`'d into it.
-
-Now, `learn open` should work seamlessly by adding your most current lab to the
-`labs` directory we just made.
-
-Also, you should be able to run the command
-
-```shell
-labs
-```
-
-at any time in your terminal and you will be taken to your `labs`  directory.
-Give it a try!
-
-> **Note:** If the `labs` command is not working, try running `learn directory`.
-> You will be prompted to re-enter the location where you would like your labs
-> to be stored. Do not use the provided default. Instead, the path should be:
->
-> ```shell
-> /mnt/c/users/<your_windows_username>/dev/flatiron/labs
-> ```
-
-<br>
-<br>
-<br>
-<hr>
 
 ## FAQ
 
