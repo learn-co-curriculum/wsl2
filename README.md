@@ -25,11 +25,12 @@ Howdy neighbor. Have you heard the news about WSL2? As of June 2020, WSL is avai
 ---
 <br/>
 
-## <a name="updating-and-configuring-windows-10"></a>Updating and Configuring Windows 10
+## Updating and Configuring Windows 10 <a name="updating-and-configuring-windows-10"></a>
 
 1. Make sure to run: [Windows Update Assistant](https://www.microsoft.com/en-us/software-download/windows10ISO). When the update is complete, your system build should be greater than 19000. Please verify this is true before continuing.
 
-
+<br/>
+<br/>
 
 ## Enabling Windows Subsystem for Linux (WSL) && Virtual Machine Platform <a name="enable-wsl2"></a>
 
@@ -51,13 +52,11 @@ Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, t
 
    ![virtual machine platform checkbox](https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-virtual-machine-platform.png)  
 
-<br>
-
 
 4. Click `ok`. This will prompt Windows to completely restart. Do so, grab some water, and let's continue!
 
-<br>
-
+<br/>
+<br/>
 
 ## Installing Ubuntu <a name="install-ubuntu"></a>
 
@@ -94,7 +93,8 @@ Once you have set up a username and password, you should return to a normal bash
 
 TODO: ENTER AN EXAMPLE OF COMMAND PROMPT HERE!!
 
-<br>
+<br/>
+<br/>
 
 ## </a>Upgrading to WSL Packages and Ubuntu Version (via Command Prompt as Admin) <a name="upgrade-wsl">
 
@@ -120,6 +120,7 @@ Annnddd That's it for WSL2 you _should_ be good to go on your WSL2 installation.
 
 
 <br/>
+<br/>
 
 ## Flatiron Tools <a name="flatiron-tools"></a>
 
@@ -132,6 +133,9 @@ Run this command in your Ubuntu terminal. This will make sure your currently ins
     ```
     sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev libpq-dev libgdbm-dev libncurses5-dev automake libtool bison gnupg postgresql postgresql-contrib
     ```
+
+<br/>
+<br/>
 
 ## Ruby Version Manager <a name="rvm"></a>
 
@@ -158,6 +162,8 @@ This will install Ruby version 2.6.1, which is what Flatiron uses for its curric
 9. Run: &nbsp; &nbsp; `rvm use 2.6.1 --default` <br/>
 This will set Ruby version 2.6.1 to be our default Ruby. 
 
+<br/>
+<br/>
 
 ## Gem Installations <a name="gems"></a>
 
@@ -219,6 +225,7 @@ As if [Rails](https://rubygems.org/gems/rails) needs an introduction! (but just 
 That should be all for necessary gems. Let's move on to configuring our version control! 
 
 <br/>
+<br/>
 
 ## Configure Git<a name="git"></a>
 
@@ -242,9 +249,10 @@ Please please please replace your YOUR_GITHUB_USER_NAME, with your actual github
 17. Run: &nbsp; &nbsp;  `git config --global user.name YOUR_GITHUB_EMAIL_ADDRESS` <br>
 You are essentially repeating the same process, but with the email address tied to your github account.
 
-<br>
+<br/>
+<br/>
 
-### Node Version Manager <a name="nvm"></a>
+## Node Version Manager <a name="nvm"></a>
 [Node Version Manager](https://www.keycdn.com/blog/node-version-manager#:~:text=What%20is%20Node%20Version%20Manager,via%20the%20command%20line%20interface.) is a tool that allows programmers to seamlessly switch between different versions of Node. I would say its a kin to Ruby Version Manager, but for Node. [Node](https://www.codecademy.com/articles/what-is-node) allows developers to write JavaScript code that runs directly in a computer process itself instead of in a browser.
 
 
@@ -298,6 +306,7 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
 4. Install the [Remote - WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) for VSCode. The Remote - WSL extension extension lets you use WSL as your full-time development environment right from VS Code!
 
 <br/>
+<br/>
 
 ## Generating a SSH Key <a name="ssh"></a>
 
@@ -330,7 +339,7 @@ You will know the process is complete once you have some randomly generated ASCI
 6. Click "*Add SSH key*", and that's all! Your ssh key has been generated on your computer, and linked to Github! Yeth!
 
 <br/>
-
+<br/>
 
 
 
@@ -359,6 +368,7 @@ Run this command in Ubuntu -- It _should_ open a `.learn-config` config file in 
 3. Save this file, and close it.
 
 <br/>
+<br/>
 
 ## Creating Flatiron Folders <a name="labs-directory"></a>
 
@@ -375,6 +385,9 @@ which will be a subdirectory of the current directory location of your terminal.
 
 Now you have the directories you need! `learn open` should work seamlessly by adding your most current lab to the
 `labs` directory we just made.
+
+<br/>
+<br/>
 
 ## Adding A Flatiron Customization To Your Terminal<a name="customization"></a>
 
