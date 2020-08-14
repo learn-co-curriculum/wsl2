@@ -270,7 +270,8 @@ This will install Node.JS!
 
 ---
 
-## Water Break
+<span style="font-size: 1.8em; padding-bottom: 0; margin-bottom: 0;"> Water Break! </span> <br/>
+<br/>
 Take a moment to close your eyes, focus on your breathing, maybe even hydrate a bit.
 
 ---
