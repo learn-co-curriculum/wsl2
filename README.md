@@ -1,6 +1,6 @@
 TODO: UPDATE BASHRC FILE
- - change `labs` alias
-
+  - change `labs` alias
+  - create alias for opening labs folder (openlabs="labs && explorer.exe ." ?)
 
 Howdy neighbor. Have you heard the news about WSL2? As of June 2020, WSL is available to the general public. I figured this would be a good opportunity to share my findings with you, the general public. But more specifically, Flatiron Students using WSL. 
 
@@ -11,15 +11,14 @@ Howdy neighbor. Have you heard the news about WSL2? As of June 2020, WSL is avai
 4. [Upgrading to WSL Packages and Ubuntu Version](#upgrade-wsl)
 5. [Flatiron Local Environment Set Up](#flatiron-tools)
 6. [Install Ruby Version Manager](#rvm)
-6. [Gem Installations](#gems)
-
-7. [Configure Git](#git)
-8. [Node Version Manager](#nvm)
-6. [Visual Studio Code](#vscode)
-7. [Generating a SSH Key](#ssh)
-[Updating Learn Config](#learn-config)
-[Creating Flatiron Folders](#labs-directory)
-[Adding Flatiron Customization To Your Terminal](#customization)
+7. [Gem Installations](#gems)
+8. [Configure Git](#git)
+9. [Node Version Manager](#nvm)
+10. [Visual Studio Code](#vscode)
+11. [Generating a SSH Key](#ssh)
+12. [Updating Learn Config](#learn-config)
+13. [Creating Flatiron Folders](#labs-directory)
+14. [Adding Flatiron Customization To Your Terminal](#customization)
 
 <br/>
 
@@ -28,7 +27,7 @@ Howdy neighbor. Have you heard the news about WSL2? As of June 2020, WSL is avai
 
 ## <a name="updating-and-configuring-windows-10"></a>Updating and Configuring Windows 10
 
-1. Make sure to run: [Windows Update Assistant](https://www.microsoft.com/en-us/software-download/windows10ISO). When the update is complete, your system build should be greater than 1900. Please verify this is true before continuing.
+1. Make sure to run: [Windows Update Assistant](https://www.microsoft.com/en-us/software-download/windows10ISO). When the update is complete, your system build should be greater than 19000. Please verify this is true before continuing.
 
 
 
@@ -124,17 +123,17 @@ Annnddd That's it for WSL2 you _should_ be good to go on your WSL2 installation.
 
 ## Flatiron Tools <a name="flatiron-tools"></a>
 
-Okay, so now we can start setting up our Ubuntu system for Flatiron stuff!
+Okay, so now we can start setting up our Ubuntu system with Flatiron tools! First, let's close and reopen Ubuntu. The run the commands below.
 
 1. Run: &nbsp; &nbsp; `sudo apt-get update` <br/>
 Run this command in your Ubuntu terminal. This will make sure your currently installed packages in your Ubuntu system are up to date.
 
 2. Then run the following command to install a few important packages. (copy the entire block of code)
-
     ```
     sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev libpq-dev libgdbm-dev libncurses5-dev automake libtool bison gnupg postgresql postgresql-contrib
     ```
-### Ruby Version Manager <a name="rvm"></a>
+
+## Ruby Version Manager <a name="rvm"></a>
 
 Next, we'll install [Ruby Version Manager](https://github.com/rvm/ubuntu_rvm), also known as RVM.
 
@@ -150,17 +149,17 @@ Next, we'll install [Ruby Version Manager](https://github.com/rvm/ubuntu_rvm), a
 
 I've purposefully listed commands 3 through 7 separately. Do not run them all at the same time -- run them in succession.
 
-Moving right along, let's set up the ruby version compatible with Flatiron labs, we want to
+Moving right along, let's set up the Ruby version compatible with Flatiron labs, we want to
   download ruby 2.6.1 and set it as our default:
 
 8. Run: &nbsp; &nbsp;  `rvm install 2.6.1` <br/>
 This will install Ruby version 2.6.1, which is what Flatiron uses for its curriculum.
 
-9. Once that's complete run: &nbsp; &nbsp; `rvm use 2.6.1 --default` <br>
+9. Run: &nbsp; &nbsp; `rvm use 2.6.1 --default` <br/>
 This will set Ruby version 2.6.1 to be our default Ruby. 
 
 
-### Gem Installations <a name="gems"></a>
+## Gem Installations <a name="gems"></a>
 
 10. Run: &nbsp; &nbsp;  `gem install bundler` <br>
 This will install a Ruby gem named [Bundler](https://rubygems.org/gems/bundler). (follow the hyperlink if you are curious as to what Bundler does)
@@ -184,18 +183,28 @@ After installing the Learn gem, you will get a weird error that looks something 
 This error is okay; it is the only error I will suggest ignoring!
 
 
-    Before we continue, let's configure our new installed learn-co gem. We'll do part of the configuration now, and another part later! 
+  Before we continue, let's configure our new installed learn-co gem. We'll do part of the configuration now, and another part later! 
 
-    - First run: &nbsp; &nbsp;  `cd ~` <br>
-    - Then run: &nbsp; &nbsp;  `touch .netrc` <br>
-    - Next run: &nbsp; &nbsp;  `learn whoami` <br>
+  - First run: &nbsp; &nbsp;  `cd ~` <br>
+  - Then run: &nbsp; &nbsp;  `touch .netrc` <br>
+  - Next run: &nbsp; &nbsp;  `learn whoami` <br>
     That last command will ask you to to retrieve some information and bring it back to terminal. That information can be found on your [learn.co](https://www.learn.co/) profile page. So, head to [learn.co](https://www.learn.co/), click on your profile picture in the top right, then click on the "**Your Profile**" link. On your profile page, scroll to the bottom and copy your OAuth token. YOU ONLY NEED TO COPY EVERYTHING AFTER "OAuth token:". For example, mine looks like this:
   ```
   9cd7da7faf8d978cb613008bdb56e4fc2dsdfs642sdfds91eb70b5d8d3b2820fd91
   ```
 
-    - Copy your token and paste it into terminal. <br>
-    If all fairs well, your terminal _should_ display some information about you!
+  - Copy your token and paste it into terminal. <br/>
+    If all goes well, your terminal _should_ display some information about you, similar to this:
+
+    ```
+    ➜ learn whoami
+    Connecting to Learn...
+    Authenticating...
+    Name:      Dwayne 👾
+    Username:  dwyn
+    Email:     dwayne.harmon@flatiron.com
+    Learn Dir: /Users/dharmon/Development/code
+    ```
 
 
 12. Run: &nbsp; &nbsp;  `gem install pry` <br>
@@ -211,7 +220,7 @@ That should be all for necessary gems. Let's move on to configuring our version 
 
 <br/>
 
-### Configure Git<a name="git"></a>
+## Configure Git<a name="git"></a>
 
 15. Run: &nbsp; &nbsp;  `git config --global color.ui true` <br>
 This (and the next 2 commands) will set up git in your system. When you enter these commands, your terminal will not say anything -- don't worry, it definitely worked!
@@ -262,9 +271,9 @@ Take a moment to close your eyes, focus on your breathing, maybe even hydrate a 
 
 ## Visual Studio Code <a name="vscode"></a>
 
-There are plenty of text editors out there. As of today 8.1.2020, do yourself a favor and just use VSCode.
+There are plenty of text editors out there. As of today 8.1.2020, do yourself a favor and just use Visual Studio Code.
 
-1. <a href="https://code.visualstudio.com/download" target="_blank">Follow this link to download VSCode</a>. Choose the Windows download, not the Linux download. Any required Linux downloads will be done via the Ubuntu terminal, and everything else should be downloaded for your Windows OS.
+1. <a href="https://code.visualstudio.com/download" target="_blank">Follow this link to download VSCode</a>. Choose the Windows download, not the Linux download. 
 
 <span style="color:red;"> NOTE: </span>
 
@@ -353,35 +362,19 @@ Run this command in Ubuntu -- It _should_ open a `.learn-config` config file in 
 
 ## Creating Flatiron Folders <a name="labs-directory"></a>
 
-You'll notice that we set up our `.learn-config` file earlier with a path
-destination of `/mnt/c/users/<your_windows_username>/dev/flatiron/labs`. The
-`.bashrc` file we just downloaded gives us a really nice way to access that
-folder quickly by just typing in `labs` when we pull up our WSL terminal (or
-anytime you want to access that folder - it doesn't matter what directory you
-are currently in when you type it). In order for this to work, we need to make
-sure that these directories exist. To do this, begin by navigating to your
-`windows home` directory:
+You'll notice that we set up our `.learn-config` file earlier with a path destination of `/mnt/c/users/YOUR-WINDOWS-USERNAME/development/flatiron/labs`. For this to actually work, we have to make sure those folders exist in your computer. To do this, begin by navigating to your Windows 10 home directory:
 
-```
-cd /mnt/c/users/your_windows_username
-```
 
-Now, let's make the appropriate files. Run these one at a time, and do it
-without copying and pasting. Remember the basic bash commands: `cd` changes
-directories to whatever folder you type in and `mkdir` creates a new directory
+1. Run: &nbsp; &nbsp;  `cd /mnt/c/Users/YOUR-WINDOWS-USERNAME`
+
+
+Now, let's make the appropriate files. `mkdir` creates a new directory
 which will be a subdirectory of the current directory location of your terminal.
 
+2. Run `mkdir development && mkdir development/flatiron && mkdir development/flatiron/labs && cd ~`
 
-`mkdir development && mkdir development/flatiron && mkdir development/flatiron/labs && cd ~`
-
-Now you have the directories you need, and you should have seen yourself
-navigating down your new file tree as you made each new directory and then
-`cd`'d into it.
-
-Now, `learn open` should work seamlessly by adding your most current lab to the
+Now you have the directories you need! `learn open` should work seamlessly by adding your most current lab to the
 `labs` directory we just made.
-
-
 
 ## Adding A Flatiron Customization To Your Terminal<a name="customization"></a>
 
