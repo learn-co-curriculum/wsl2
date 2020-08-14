@@ -1,10 +1,3 @@
----
-title: WSL::Flatiron Local Environment
-date: "2020-06-05T00:00:00.000Z"
-description: Configure WSL2; Code on Windows 10
----
-
-
 Howdy neighbor. Have you heard the news about WSL2? As of June 2020, WSL is available to the general public. I figured this would be a good opportunity to share my findings with you, the general public. But more specifically, Flatiron Students using WSL. 
 
 ## Table of Contents:
@@ -13,6 +6,7 @@ Howdy neighbor. Have you heard the news about WSL2? As of June 2020, WSL is avai
 3. Installing Ubuntu
 4. Upgrading to WSL Packages and Ubuntu Version
 5. Flatiron Local Environment Set Up
+6. [Visual Studio Code](#vscode)vscode
 6. Install Ruby Version Manager
 7. Configure Git
 8. Node Version Manager
@@ -64,18 +58,28 @@ Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, t
 
 3. Search for, and open the newly installed Ubuntu application.
 
-4. Choose a username -- I suggest picking a really simple username (like your first name).
+4. Choose a username -- I suggest picking a really simple username (like a short nickname).
+<div style="display: block; margin: auto; text-align: center; border-style: solid; border-color: red; border-width: 1px; border-radius: 10px; padding: 20px; width: 70%; align: center; padding: 0; padding-top: 10px;">
+<span style="color: red; font-size: 1.3em;">NOTE:</span>
+<span style="text-align: left;">
 
-    <span style="color:red;">NOTE:</span> 
-    -  Ubuntu will not accept capital letters in a username
-    -  Ubuntu will not accept numbers at the start of a username
+-  Ubuntu will not accept capital letters in a username
+-  Ubuntu will not accept numbers at the start of a username
+</span>
+</div>
 
-5. Choose a password -- I suggest picking a really simple password.
 
-    <span style="color:red;">NOTE:</span> 
-    - When you start typing a password, it will look as though nothing is happening. Thats totally normal, it's just a security feature. 
-    - Type whatever password you would like, and press enter.
-    - It will prompt you to confirm your password, retype the same password and hit enter.
+5. Choose a password -- I suggest picking a really really simple password.
+
+<div style="display: block; margin: auto; text-align: center; border-style: solid; border-color: red; border-width: 1px; border-radius: 10px; padding: 20px; width: 70%; align: center; padding: 0; padding-top: 10px;">
+<span style="color: red; font-size: 1.3em;">NOTE:</span>
+<span style="text-align: left;">
+
+- When you start typing a password, it will look as though nothing is happening. Thats totally normal, it's just a security feature. 
+- Type whatever password you would like, and press enter.
+- It will prompt you to confirm your password, retype the same password and hit enter.
+</span>
+</div>
 
 Once you have set up a username and password, you should return to a normal bash prompt (what does even mean!?). It should look something like this:
 
@@ -161,19 +165,25 @@ This will install a Ruby gem named [Bundler](https://rubygems.org/gems/bundler).
 11. Run: &nbsp; &nbsp;  `gem install learn-co` <br>
 This will allow you to use commands like "*learn open*", "*learn test*", and "*learn submit*". For more information on the [Learn gem](https://rubygems.org/gems/learn-co), follow that hyperlink! 
 
-    <span style="color:red;">NOTE:</span> 
-    After installing the Learn gem, you will get a weird error that looks something like:
+<div style="display: block; margin: auto; text-align: center; border-style: solid; border-color: red; border-width: 1px; border-radius: 10px; padding: 20px; width: 70%; align: center; padding: 0; padding-top: 10px;">
+<span style="color: red; font-size: 1.3em;">NOTE:</span>
+<span style="text-align: left;">
 
-    ```
+    After installing the Learn gem, you will get a weird error that looks something like:
+    
+
+```
     RDoc is not a full Ruby parser and will fail when fed invalid ruby programs.
 
     The internal error was:
         (NoMethodError) undefined method `[]' for nil:NilClass
         ERROR:  While executing gem ... (NoMethodError)
         undefined method `[]' for nil:NilClass
-    ```
+```
 
     This error is okay; it is the only error I will suggest ignoring!
+</span> 
+</div>
 
     Before we continue, let's configure our new installed learn-co gem. We'll do part of the configuration now, and another part later! 
 
@@ -181,9 +191,9 @@ This will allow you to use commands like "*learn open*", "*learn test*", and "*l
     - Then run: &nbsp; &nbsp;  `touch .netrc` <br>
     - Next run: &nbsp; &nbsp;  `learn whoami` <br>
     That last command will ask you to to retrieve some information and bring it back to terminal. That information can be found on your [learn.co](https://www.learn.co/) profile page. So, head to [learn.co](https://www.learn.co/), click on your profile picture in the top right, then click on the "**Your Profile**" link. On your profile page, scroll to the bottom and copy your OAuth token. YOU ONLY NEED TO COPY EVERYTHING AFTER "OAuth token:". For example, mine looks like this:
-      ```
-      9cd7da7faf8d978cb613008bdb56e4fc2d6642sdfds91eb70b5d8d3b2820fd91
-      ```
+  ```
+  9cd7da7faf8d978cb613008bdb56e4fc2d6642sdfds91eb70b5d8d3b2820fd91
+  ```
 
     - Copy your token and paste it into terminal. <br>
     If all fairs well, your terminal _should_ display some information about you!
@@ -241,30 +251,28 @@ This refreshes your terminal!
 This will install Node.JS! 
 
 
-
-<br>
+<br/>
 
 ## <div style="text-align:center">• &nbsp;  Water Break &nbsp;  • </div> 
 <div style="text-align:center"> Take a moment to close your eyes, focus on your breathing, hydrate a bit. </div>
 
+<br/>
 
-<br>
+## <a name="vscode"></a>Visual Studio Code
 
+There are plenty of text editors out there. As of today 8.1.2020, do yourself a favor and just use VSCode.
 
+1. <a href="https://code.visualstudio.com/download" target="_blank">Follow this link to download VSCode</a>. Choose the Windows download, not the Linux download. Any required Linux downloads will be done via the Ubuntu terminal, and everything else should be downloaded for your Windows OS.
 
+<div style="display: block; margin: auto; text-align: center; border-style: solid; border-color: red; border-width: 1px; border-radius: 10px; padding: 20px; width: 70%; align: center; padding: 0; padding-top: 10px;">
+<span style="color: red; font-size: 1.3em;">NOTE:</span>
 
+<span style=""></span>
 
-## Visual Studio Code
+As VSCode is installing, make sure to check all check boxes so that it installs for your entire system.
+</span>
+</div>
 
-You can use any editor you want, but I am going to be walking through setting up
-VSCode.
-
-1. <a href="https://code.visualstudio.com/download" target="_blank">Follow this link to download VSCode</a>. Choose the Windows download, not the Linux
-    download. Any required Linux downloads will be done via the Ubuntu terminal,
-    and everything else should be downloaded for your Windows OS.
-
-    <span style="color:red;">NOTE:</span> <br>
-    As VSCode is installing, make sure to check all check boxes so that it installs for your entire system.
 
 2. To configure your Ubuntu terminal to be available in VSCode:
 
@@ -275,24 +283,16 @@ VSCode.
 
     ![command palette](https://curriculum-content.s3.amazonaws.com/setup-instructions/default-shell.png)  
 
-    - Once you select it, a few options will pop up. You want to select WSL
+    - Once you select it, a few options will pop up. You want to select **WSL**.
 
     ![WSL Terminal](https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-bash-selection.png)
 
 3. Now, you can use your Ubuntu terminal in VSCode. Select "New Terminal" in
     the "Terminal" drop-down, or type `Ctrl`+`Shift`+` in order to use it!
 
-4. Install the [Remote - WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) for VSCode. The Remote - WSL extension extension lets you use WSL as your full-time development environment right from VS Code! 
+4. Install the [Remote - WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) for VSCode. The Remote - WSL extension extension lets you use WSL as your full-time development environment right from VS Code!
 
-<br>
-
-
-
-
-
-
-
-
+<br/>
 
 ## <a name="ssh"></a>SSH
 
@@ -300,29 +300,27 @@ VSCode.
   Let's use SSH so you will not have to authenticate with
   your GitHub username and password everytime you run &nbsp; *learn save* , &nbsp; *learn submit* ,  or any other commands similar to&nbsp;  *git push*.
 
-  1. Run:&nbsp; &nbsp; `ssh-keygen` <br>
+1. Run:&nbsp; &nbsp; `ssh-keygen` <br>
     - You will be asked where to save the new ssh file. Just press "enter" to save it in the default location. <br>
     - You will be asked for a passphrase -- <span style="color:red;">DO NOT ENTER A PASSPRHASE!</span> Simply press "enter", twice.
 
-  You will know the process is complete once you have some randomly generated ASCII art in your terminal. Now, let's retrieve the contents of that file.
+You will know the process is complete once you have some randomly generated ASCII art in your terminal. Now, let's retrieve the contents of that file.
 
-  2. Run:&nbsp; &nbsp;  `cat ~/.ssh/id_rsa.pub` <br>
+2. Run:&nbsp; &nbsp;  `cat ~/.ssh/id_rsa.pub` <br>
   This should print out a really long string of characters starting with *ssh*. It will look *something like this*:
-      ```
-      ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDI0n1zGPzhpwJRCwn0KeI8BybeyZP1XJWaGnvBMJNfzvXVhRGX5TxZ6Aq2hvHtDVE0ST9O1L2PU802RN5in6mpwCWoeJx9HXKoI3KW1nAYMJH8LjR1I2nbm7cSZjg732CdElc3uwTMf0cU7S2oocH5vTYpBT20NsdfsdsdfsdQaHdfAlop6VVckZKNZbPLNiW1MO2rk7Hw1j6r6bDM1nFwV+uDzxJ7+uEBXpl6bsxVn7X8AmwZdLSYz6wTq1lXWTy46tfkkFPNFyu5akkYoTym3jnQpKdW6AOVl89dXfRira4+DF7mQt3+kcfqHVsC7nN4s5T2Ju2KrVYiKF4yo89CXd7Yu6EQx7JeRlw+kxtzgYo1enMnp4hAawgxCkWlEqWyJQkNVZ6Wq+/gcHezJr2PoUc3lTX61TUcoCXV3QkjJDmnsSiwVDUqypCEBtNZyKMX5ZjSESPaj24C3F/yOdWIQu40iUR8oOT86Xo9+waR/nIobxaqWLJ4I8vfVqXsrh0ZTU= dharmon@skynet.attlocal.net
+    ```
+    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDI0n1zGPzhpwJRCwn0KeI8BybeyZP1XJWaGnvBMJNfzvXVhRGX5TxZ6Aq2hvHtDVE0ST9O1L2PU802RN5in6mpwCWoeJx9HXKoI3KW1nAYMJH8LjR1I2nbm7cSZjg732CdElc3uwTMf0cU7S2oocH5vTYpBT20NsdfsdsdfsdQaHdfAlop6VVckZKNZbPLNiW1MO2rk7Hw1j6r6bDM1nFwV+uDzxJ7+uEBXpl6bsxVn7X8AmwZdLSYz6wTq1lXWTy46tfkkFPNFyu5akkYoTym3jnQpKdW6AOVl89dXfRira4+DF7mQt3+kcfqHVsC7nN4s5T2Ju2KrVYiKF4yo89CXd7Yu6EQx7JeRlw+kxtzgYo1enMnp4hAawgxCkWlEqWyJQkNVZ6Wq+/gcHezJr2PoUc3lTX61TUcoCXV3QkjJDmnsSiwVDUqypCEBtNZyKMX5ZjSESPaj24C3F/yOdWIQu40iUR8oOT86Xo9+waR/nIobxaqWLJ4I8vfVqXsrh0ZTU= dharmon@skynet.attlocal.net
 
-      ```
+    ```
       <span style="color:red;">Just keep in mind, yours will look *similar*... not the same!</span>
 
 3. copy whatever <span style="color:red;">__your__</span> ssh key is, and follow this link: [Github New SSH](https://github.com/settings/ssh/new). 
 
 4. In the top input field, enter something meaningful. Such as, computer name, purpose for the key and date are solid options.
 
-5. Paste your ssh key in the lower box.
+5. Paste your ssh key in the lower box. After you've completed both, your page should look similar to this:
 
-    After you've completed both, your page should look similar to this:
-
-![New SSH Key in Github](./sshkeysnew.png)
+![New SSH Key in Github](./images/sshkeysnew.png)
 
 6. Click "*Add SSH key*", and that's all! Your ssh key has been generated on your computer, and linked to Github! Yeth!
 
