@@ -83,10 +83,9 @@ Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, t
 <br/>
 
 <p align="center">
-  <img  width="475" height="349" src="https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-virtual-machine-platform.png">
+  <img  width="475" height="349" src="https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-turnon.png">
 </p>  
 
-    ![wsl checkbox](https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-turnon.png)
 
 <br/>
 
@@ -381,9 +380,9 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
       see it. Select that option.
       <br />
 
-      <p align="center">
-      <img  src="https://curriculum-content.s3.amazonaws.com/setup-instructions/default-shell.png">
-      </p>
+<p align="center">
+<img  src="https://curriculum-content.s3.amazonaws.com/setup-instructions/default-shell.png">
+</p>
 
       <br />
 
@@ -391,9 +390,9 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
 
     <br />
 
-      <p align="center">
-        <img  src="https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-bash-selection.png">
-      </p>
+<p align="center">
+  <img  src="https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-bash-selection.png">
+</p>
 
       <br />
 
