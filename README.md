@@ -100,11 +100,11 @@ Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, t
 
  When that's complete, it should look like this:
 
-<br/>
-
 <p align="center">
   <img  src="./images/wsl-checklist.gif">
 </p>
+
+<br/>
 
 4. Click `ok`. This will prompt Windows to completely restart. Do so, grab some water, and let's continue!
 
