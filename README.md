@@ -1,7 +1,3 @@
-TODO: UPDATE BASHRC FILE
-  - change `labs` alias
-  - create alias for opening labs folder (openlabs="labs && explorer.exe ." ?)
-
 Howdy neighbor. Have you heard the news about WSL2? As of June 2020, WSL is available to the general public. I figured this would be a good opportunity to share my findings with you, the general public. But more specifically, Flatiron Students using WSL.
 
 # What is the Windows Subsystem for Linux? 
@@ -74,7 +70,11 @@ Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, t
 
 1. Go to your Windows Search bar and type in `Turn Windows Features On or Off`. Click on the result that matches your query. It will be in your Control Panel.  You should see something like this:
 
-    ![toggle windows features](https://curriculum-content.s3.amazonaws.com/setup-instructions/turn-windows-features-on-or-off.png) 
+<br/>
+
+<p align="center">
+  <img  src="https://curriculum-content.s3.amazonaws.com/setup-instructions/turn-windows-features-on-or-off.png">
+</p>
 
 <br/>
 
@@ -98,18 +98,16 @@ Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, t
   <img  width="475" height="349" src="https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-virtual-machine-platform.png">
 </p>  
 
-4. Click `ok`. This will prompt Windows to completely restart. Do so, grab some water, and let's continue!
 
-<br/>
-<br/>
-
-5. When thats complete, it should look like this:
+ When that's complete, it should look like this:
 
 <br/>
 
 <p align="center">
   <img  src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2019/08/1596503725windows-features.png">
 </p>
+
+4. Click `ok`. This will prompt Windows to completely restart. Do so, grab some water, and let's continue!
 
 <br/>
 <br/>
@@ -194,6 +192,9 @@ Inside Command Prompt (running as administrator), copy and paste the code below:
 
 5. Run: &nbsp; &nbsp;  `wsl.exe --set-version Ubuntu 2` <br>
 This command will change your version of Ubuntu from 1, to 2.
+
+<br/>
+<br/>
 
 Annnddd That's it for WSL2 you _should_ be good to go on your WSL2 installation. Let's move on to our Learn Local Environment installation.
 
@@ -328,8 +329,10 @@ Please please please replace your YOUR_GITHUB_USER_NAME, with your actual github
     ```
     git config --global user.name "Dwayne Harmon"
     ```
+<br/>
 
 17. Run: &nbsp; &nbsp;  `git config --global user.email YOUR_GITHUB_EMAIL_ADDRESS` <br>
+
 You are essentially repeating the same process, but with the email address tied to your github account.
 
 <br/>
@@ -376,12 +379,23 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
     - open the Command Palette via `F1` or &nbsp; `Ctrl` &nbsp; + &nbsp; `Shift` &nbsp; + &nbsp; `p`
     - begin typing the following: `Terminal: Select Default Shell`  until you
       see it. Select that option.
+      <br />
 
-    ![command palette](https://curriculum-content.s3.amazonaws.com/setup-instructions/default-shell.png)  
+      <p align="center">
+      <img  src="https://curriculum-content.s3.amazonaws.com/setup-instructions/default-shell.png">
+      </p>
 
-    - Once you select it, a few options will pop up. You want to select **WSL Bash C:\WINDOWS\System32\wsl.exe**.
+      <br />
 
-    ![WSL Terminal](https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-bash-selection.png)
+    - Once you select it, a few options will pop up. You want to select WSL Bash C:\WINDOWS\System32\wsl.exe.
+
+    <br />
+
+      <p align="center">
+        <img  src="https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-bash-selection.png">
+      </p>
+
+      <br />
 
 3. Now, you can use your Ubuntu terminal in VSCode. Select "New Terminal" in
     the "Terminal" drop-down, or type `Ctrl`+`Shift`+` in order to use it!
@@ -397,19 +411,28 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
   Let's use SSH so you will not have to authenticate with
   your GitHub username and password everytime you run &nbsp; *learn save* , &nbsp; *learn submit* ,  or any other commands similar to&nbsp;  *git push*.
 
-1. Run:&nbsp; &nbsp; `ssh-keygen` <br>
-    - You will be asked where to save the new ssh file. Just press "enter" to save it in the default location. <br>
-    - You will be asked for a passphrase -- <span style="color:red;">DO NOT ENTER A PASSPRHASE!</span> Simply press "enter", twice.
+1. Run:&nbsp; &nbsp; `ssh-keygen` <br/>
+    - You will be asked where to save the new ssh file. Just press **enter** to save it in the default location. <br/>
+
+    - You will be asked for a passphrase -- <span style="color:red;">**DO NOT ENTER A PASSPRHASE!**</span> Simply press **enter**, twice.
 
 You will know the process is complete once you have some randomly generated ASCII art in your terminal. Now, let's retrieve the contents of that file.
 
-2. Run:&nbsp; &nbsp;  `cat ~/.ssh/id_rsa.pub` <br>
+2. Run:&nbsp; &nbsp;  `cat ~/.ssh/id_rsa.pub` <br/>
   This should print out a really long string of characters starting with *ssh*. It will look *something like this*:
+
     ```
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDI0n1zGPzhpwJRCwn0KeI8BybeyZP1XJWaGnvBMJNfzvXVhRGX5TxZ6Aq2hvHtDVE0ST9O1L2PU802RN5in6mpwCWoeJx9HXKoI3KW1nAYMJH8LjR1I2nbm7cSZjg732CdElc3uwTMf0cU7S2oocH5vTYpBT20NsdfsdsdfsdQaHdfAlop6VVckZKNZbPLNiW1MO2rk7Hw1j6r6bDM1nFwV+uDzxJ7+uEBXpl6bsxVn7X8AmwZdLSYz6wTq1lXWTy46tfkkFPNFyu5akkYoTym3jnQpKdW6AOVl89dXfRira4+DF7mQt3+kcfqHVsC7nN4s5T2Ju2KrVYiKF4yo89CXd7Yu6EQx7JeRlw+kxtzgYo1enMnp4hAawgxCkWlEqWyJQkNVZ6Wq+/gcHezJr2PoUc3lTX61TUcoCXV3QkjJDmnsSiwVDUqypCEBtNZyKMX5ZjSESPaj24C3F/yOdWIQu40iUR8oOT86Xo9+waR/nIobxaqWLJ4I8vfVqXsrh0ZTU= dharmon@skynet.attlocal.net
 
     ```
-      <span style="color:red;">Just keep in mind, yours will look *similar*... not the same!</span>
+
+  <p align="center">
+    <img  src="./images/ssh-key.gif">
+  </p>
+
+  <span style="color:red;">Just keep in mind, yours will look *similar*... not the same!</span>
+
+<br />
 
 3. copy whatever <span style="color:red;">__your__</span> ssh key is, and follow this link: [Github New SSH](https://github.com/settings/ssh/new). 
 
@@ -417,7 +440,13 @@ You will know the process is complete once you have some randomly generated ASCI
 
 5. Paste your ssh key in the lower box. After you've completed both, your page should look similar to this:
 
-![New SSH Key in Github](./images/sshkeysnew.png)
+<br />
+
+<p align="center">
+  <img  src="./images/sshkeysnew.png">
+</p>
+
+<br />
 
 6. Click "*Add SSH key*", and that's all! Your ssh key has been generated on your computer, and linked to Github! Yeth!
 
@@ -425,30 +454,39 @@ You will know the process is complete once you have some randomly generated ASCI
 <br/>
 
 
-
-
-
-
-
-
-
-
-
 ## Updating Learn Config <a name="learn-config"></a>
 First things first, let's completely close VSCode, and Ubuntu. Then, let's re-open only Ubuntu.
 
-First run `cd /mnt/c/ && echo %USERPROFILE%` This should tell you your Windows 10 username. 
+1. Let's find your Windows 10 username. To do so, we will have to use **Command Prompt** again. Open the Command Prompt app and run: 
 
-1. Run: &nbsp; &nbsp; `cd ~/.learn-config`
-Run this command in Ubuntu -- It _should_ open a `.learn-config` config file in VSCode
+    ```
+    echo %username%
+    ```
 
-2. You want to update this file so that it looks EXACTLY the same as below (except for YOUR-WINDOWS-USERNAME of course)
-```
-  ---
-  :learn_directory: "/mnt/c/Users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
-  :editor: code
-```
-3. Save this file, and close it.
+    You can close Command Prompt (Just remember to write down your Windows 10 username.). 
+
+<p align="center">
+  <img  src="./images/echousername.gif">
+</p>
+
+  <br/>
+
+2. Back in your **Ubuntu Terminal**, run: 
+
+    ```
+    code ~/.learn-config
+    ```
+    This command  _should_ open a `.learn-config` config file in VSCode.
+
+3. You want to update this file so that it looks EXACTLY the same as below (except for YOUR-WINDOWS-USERNAME of course)
+    ```
+      ---
+      :learn_directory: "/mnt/c/Users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
+      :editor: code
+    ```
+    <br/>
+
+4. Save this file, and close it.
 
 <br/>
 <br/>
@@ -460,11 +498,18 @@ You'll notice that we set up our `.learn-config` file earlier with a path destin
 
 1. Run: &nbsp; &nbsp;  `cd /mnt/c/Users/YOUR-WINDOWS-USERNAME`
 
+<p align="center">
+  <img  src="./images/cd-users-folder.gif">
+</p>
 
 Now, let's make the appropriate files. `mkdir` creates a new directory
 which will be a subdirectory of the current directory location of your terminal.
 
-2. Run `mkdir development && mkdir development/flatiron && mkdir development/flatiron/labs && cd ~`
+2. Run the entire block below:
+```
+mkdir development && mkdir development/flatiron && mkdir development/flatiron/labs && cd ~
+```
+<br/>
 
 Now you have the directories you need! `learn open` should work seamlessly by adding your most current lab to the
 `labs` directory we just made.
@@ -474,45 +519,37 @@ Now you have the directories you need! `learn open` should work seamlessly by ad
 
 ## Adding A Flatiron Customization To Your Terminal<a name="customization"></a>
 
-Start out by making a backup for your `.bashrc`
+1. Start out by making a backup for your `.bashrc`
 
-```shell
-mv .bashrc .bashrc.bak
-```
+    ```
+    mv .bashrc .bashrc.bak
+    ```
 
-We will want a tool for converting Windows ending to Unix endings for our new
+2. We will want a tool for converting Windows ending to Unix endings for our new
 `.bashrc`
 
-```shell
-sudo apt-get install dos2unix
-```
+    ```
+    sudo apt-get install dos2unix
+    ```
 
-download the new `.bashrc`
+3. download the new `.bashrc`
 
-```shell
-curl -R "https://raw.githubusercontent.com/Enoch2k2/flatiron-wsl-bashrc/master/.bashrc" >> $HOME/.bashrc
-```
+    ```
+    curl -R "https://raw.githubusercontent.com/Enoch2k2/flatiron-wsl-bashrc/master/.bashrc" >> $HOME/.bashrc
+    ```
 
-We'll use our converter to convert our bashrc to use the right unix endings:
+4. We'll use our converter to convert our bashrc to use the right unix endings:
 
-```shell
-dos2unix .bashrc
-```
+    ```
+    dos2unix .bashrc
+    ```
+<br/>
+<br/>
 
+--- 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br/>
+<br/>
 
 ## Important Knowledge: Basic Use
 
@@ -566,6 +603,13 @@ code .
 
 (if you are in your Linux file system, VSCode will open, but not to the right spot).
 
+<br/>
+<br/>
+
+--- 
+
+<br/>
+<br/>
 
 ## FAQ
 
@@ -585,13 +629,21 @@ right click and `Restart` it. If it is not running, right click it and
 
 [You can check out the github issue here](https://github.com/Microsoft/WSL/issues/2576)
 
+<br/>
+<br/>
+<br/>
+
 ---
+<br/>
+<br/>
+<br/>
 
 ## Resources
 
-[Microsoft Documentation: Windows Subsystem for Linux]( https://docs.microsoft.com/en-us/windows/wsl/install-win10)  
-[Setting up a SSH Key with GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)  
-[Basic Linux Commands](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)
+1. [Setting up a SSH Key with GitHub](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)  
+2. [Microsoft Documentation: Windows Subsystem for Linux]( https://docs.microsoft.com/en-us/windows/wsl/install-win10)  
+3. [Basic Linux Commands](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)
+[The Complete Developer's Guide to Windows Subsystem for Linux 2](https://www.sitepoint.com/wsl2-windows-terminal/)
 
 [VS Code]: https://code.visualstudio.com/download
 [WSL Installation Guide]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
