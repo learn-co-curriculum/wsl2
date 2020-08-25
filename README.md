@@ -235,7 +235,7 @@ Okay, so now we can start setting up our Ubuntu system with Flatiron tools! Firs
 
 ## Ruby Version Manager <a name="rvm"></a>
 
-Next, we'll install [Ruby Version Manager](https://github.com/rvm/ubuntu_rvm), also known as RVM.
+Next, we'll install [Ruby Version Manager](https://github.com/rvm/ubuntu_rvm), also known as RVM. I've purposefully listed commands 3 through 7 separately. Do not run them all at the same time -- run them in succession. The combined 5 commands will install RVM.
 
 3. Run:
     ```
@@ -262,9 +262,9 @@ Next, we'll install [Ruby Version Manager](https://github.com/rvm/ubuntu_rvm), a
     source ~/.bashrc
     ```
 
-I've purposefully listed commands 3 through 7 separately. Do not run them all at the same time -- run them in succession. The combined 5 commands will install RVM. However, to start using RVM ***SHUT DOWN YOUR UBUNTU TERMINAL AND REOPEN IT AGAIN.***
+For all intents and purposes, RVM is now installed. However, to start using it, you must ***SHUT DOWN YOUR UBUNTU TERMINAL AND REOPEN IT AGAIN.***
 
-Moving right along, let's set up the Ruby version compatible with Flatiron labs, we want to download ruby 2.6.1 and set it as our default:
+Moving right along, let's install the Ruby version compatible with Flatiron labs, we want to download ruby 2.6.1 and set it as our default:
 
 8. This following will install Ruby version 2.6.1, which is what Flatiron uses for its curriculum. Run:
     ```
