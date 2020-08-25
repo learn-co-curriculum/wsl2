@@ -155,7 +155,7 @@ Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, t
 
 <br/>
 
-Once you have set up a username and password, you should return to a normal bash prompt (what does even mean!?). It should look something like this:
+Once you have set up a username and password, you should return to a normal bash prompt (what does that even mean!?). It should look something like this:
 
 <br/>
 
@@ -168,7 +168,7 @@ Once you have set up a username and password, you should return to a normal bash
 
 ## Upgrading to WSL Packages and Ubuntu Version (via Command Prompt as Admin) <a name="upgrade-wsl"></a>
 
-At this point, you've already install WSL1, we just need to run a few commands to update it to WSL2. The next few commands are a little quirky, but, extremely important.
+At this point, you've already installed WSL1, we just need to run a few commands to update it to WSL2. The next few commands are a little quirky, but, extremely important.
 
 1. [Click this link](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) -- it will download the necessary msi package. The package's name should be something along the lines of: `wsl_update_x64.msi`.
 
@@ -217,7 +217,7 @@ Annnddd That's it for WSL2 you _should_ be good to go on your WSL2 installation.
 
 ## Flatiron Tools <a name="flatiron-tools"></a>
 
-Okay, so now we can start setting up our Ubuntu system with Flatiron tools! First, let's close and reopen Ubuntu. The run the commands below.
+Okay, so now we can start setting up our Ubuntu system with Flatiron tools! First, let's close and reopen Ubuntu. Then run the commands below.
 
 1. Run the following command in your Ubuntu terminal. This will make sure your currently installed packages in your Ubuntu system are up to date:
     ```
@@ -389,7 +389,7 @@ That should be all for necessary gems. Let's move on to configuring our version 
 <br/>
 
 ## Node Version Manager <a name="nvm"></a>
-[Node Version Manager](https://www.keycdn.com/blog/node-version-manager#:~:text=What%20is%20Node%20Version%20Manager,via%20the%20command%20line%20interface.) is a tool that allows programmers to seamlessly switch between different versions of Node. I would say its akin to Ruby Version Manager, but for Node. [Node](https://www.codecademy.com/articles/what-is-node) allows developers to write JavaScript code that runs directly in a computer process itself instead of in a browser.
+[Node Version Manager](https://www.keycdn.com/blog/node-version-manager#:~:text=What%20is%20Node%20Version%20Manager,via%20the%20command%20line%20interface.) is a tool that allows programmers to seamlessly switch between different versions of Node. I would say it's akin to Ruby Version Manager, but for Node. [Node](https://www.codecademy.com/articles/what-is-node) allows developers to write JavaScript code that runs directly in a computer process itself instead of in a browser.
 
 
 20. The following will install NVM, baby! &nbsp; Run:
@@ -456,7 +456,7 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
 <br />
 
 3. Now, you can use your Ubuntu terminal in VSCode. Select "New Terminal" in
-    the "Terminal" drop-down, or type `Ctrl` + `Shift` + `\`` in order to use it!
+    the "Terminal" drop-down, or type `Ctrl` + `Shift` + \` (ctrl + shift + backtick) in order to use it!
 
 4. Install the [Remote - WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) for VSCode. The Remote - WSL extension extension lets you use WSL as your full-time development environment right from VS Code!
 
@@ -467,7 +467,7 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
 
   You can either communicate with your remote repositories via HTTPS or SSH.
   Let's use SSH so you will not have to authenticate with
-  your GitHub username and password everytime you run &nbsp; *learn save* , &nbsp; *learn submit* ,  or any other commands similar to&nbsp;  *git push*.
+  your GitHub username and password everytime you run &nbsp; *learn save* , &nbsp; *learn submit* ,  or any other commands `push` code to GitHub.
 
 1. Run: 
     ```
@@ -590,7 +590,7 @@ Now you have the directories you need! `learn open` should work seamlessly by ad
     mv .bashrc .bashrc.bak
     ```
 
-2. We will want a tool for converting Windows ending to Unix endings for our new
+2. We will want a tool for converting Windows endings to Unix endings for our new
 `.bashrc`
 
     ```
