@@ -545,9 +545,9 @@ First things first, let's completely close VSCode, and Ubuntu. Then, let's re-op
 
 3. You want to update this file so that it looks EXACTLY the same as below (except for YOUR-WINDOWS-USERNAME of course)
     ```
-      ---
-      :learn_directory: "/mnt/c/Users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
-      :editor: code
+    ---
+    :learn_directory: "/mnt/c/Users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
+    :editor: code
     ```
     <br/>
 
