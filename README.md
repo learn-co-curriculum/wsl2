@@ -552,6 +552,7 @@ First things first, let's completely close VSCode, and Ubuntu. Then, let's re-op
 <br />
 
 **NOTE**:
+
 If your username contains any spaces in it, you will need to escape them in your .learn-config file. There are a couple ways to do this, the easiest is with a backslash. For example if my username was "Dwayne Harmon", I could escape the space between my first and last name with a backslash, like so: `Dwayne\ Harmon`.
 In practice, the example would look like this: <br /> 
 `:learn_directory: "/mnt/c/Users/Dwayne\ Harmon/development/flatiron/labs"`.
