@@ -566,7 +566,7 @@ In any event, update your .learn-config file.
     :editor: code
     ```
 
-    <br/>
+<br/>
 
 4. Save this file, and close it.
 
