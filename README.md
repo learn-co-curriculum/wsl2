@@ -549,9 +549,12 @@ First things first, let's completely close VSCode, and Ubuntu. Then, let's re-op
     This command  _should_ open a `.learn-config` config file in VSCode.
 
 3. You want to update this file so that it looks EXACTLY the same as below (except for YOUR-WINDOWS-USERNAME of course)
-  **NOTE**:
+<br />
+
+  **NOTE**: <br />
   If your username contains any spaces in it, you will need to escape the spaces in your username. There are a couple ways to do this, he easiest is with a backslash. For example if my username was "Dwayne Harmon", I could escape the space between my first and last name with a backslash, like so: `Dwayne\ Harmon`.
-  In practice, the example would look like this: `:learn_directory: "/mnt/c/Users/Dwayne\ Harmon/development/flatiron/labs"`.
+  In practice, the example would look like this: <br /> 
+  `:learn_directory: "/mnt/c/Users/Dwayne\ Harmon/development/flatiron/labs"`.
   
 <br/>
 In any event, update your .learn-config file.
