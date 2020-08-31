@@ -301,7 +301,7 @@ Moving right along, let's install the Ruby version compatible with Flatiron labs
 
 
 
-**NOTE:** <br/>
+**NOTE:**
 After installing the Learn gem, you will get a weird error that looks something like:
     
 ```
@@ -431,7 +431,7 @@ There are plenty of text editors out there. As of today 8.1.2020, do yourself a 
 
 1. <a href="https://code.visualstudio.com/download" target="_blank">Follow this link to download VSCode</a>. Choose the Windows download, not the Linux download. 
 
-<span style="color:red;"> NOTE: </span>
+**NOTE:**
 
 As VSCode is installing, make sure to check all check boxes so that it installs for your entire system.
 
@@ -551,21 +551,21 @@ First things first, let's completely close VSCode, and Ubuntu. Then, let's re-op
 3. You want to update this file so that it looks EXACTLY the same as below (except for YOUR-WINDOWS-USERNAME of course)
 <br />
 
-    **NOTE**: <br />
-  If your username contains any spaces in it, you will need to escape them in your .learn-config file. There are a couple ways to do this, the easiest is with a backslash. For example if my username was "Dwayne Harmon", I could escape the space between my first and last name with a backslash, like so: `Dwayne\ Harmon`.
-  In practice, the example would look like this: <br /> 
-  `:learn_directory: "/mnt/c/Users/Dwayne\ Harmon/development/flatiron/labs"`.
+**NOTE**:
+If your username contains any spaces in it, you will need to escape them in your .learn-config file. There are a couple ways to do this, the easiest is with a backslash. For example if my username was "Dwayne Harmon", I could escape the space between my first and last name with a backslash, like so: `Dwayne\ Harmon`.
+In practice, the example would look like this: <br /> 
+`:learn_directory: "/mnt/c/Users/Dwayne\ Harmon/development/flatiron/labs"`.
   
 <br/>
 
-        In any event, update your .learn-config file.
+In any event, update your .learn-config file.
 
     ```
     ---
     :learn_directory: "/mnt/c/Users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
     :editor: code
     ```
-    
+
     <br/>
 
 4. Save this file, and close it.
