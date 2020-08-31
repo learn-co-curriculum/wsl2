@@ -481,7 +481,7 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
 
   - You will be asked where to save the new ssh file. Just press **enter** to save it in the default location. <br/>
 
-  - You will be asked for a passphrase -- <span style="color:red;">**DO NOT ENTER A PASSPRHASE!**</span> Simply press **enter**, twice.
+  - You will be asked for a passphrase -- <span style="color:red;">**DO NOT ENTER A PASSPHRASE!**</span> Simply press **enter**, twice.
 
 You will know the process is complete once you have some randomly generated ASCII art in your terminal. Now, let's retrieve the contents of that file.
 
@@ -549,6 +549,13 @@ First things first, let's completely close VSCode, and Ubuntu. Then, let's re-op
     This command  _should_ open a `.learn-config` config file in VSCode.
 
 3. You want to update this file so that it looks EXACTLY the same as below (except for YOUR-WINDOWS-USERNAME of course)
+  **NOTE**:
+  If your username contains any spaces in it, you will need to escape the spaces in your username. There are a couple ways to do this, he easiest is with a backslash. For example if my username was "Dwayne Harmon", I could escape the space between my first and last name with a backslash, like so: `Dwayne\ Harmon`.
+  In practice, the example would look like this: `:learn_directory: "/mnt/c/Users/Dwayne\ Harmon/development/flatiron/labs"`.
+  
+<br/>
+In any event, update your .learn-config file.
+
     ```
     ---
     :learn_directory: "/mnt/c/Users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
