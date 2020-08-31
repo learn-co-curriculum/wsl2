@@ -1,6 +1,7 @@
 Howdy neighbor. Have you heard the news about WSL2? As of June 2020, WSL is available to the general public. I figured this would be a good opportunity to share my findings with you, the general public. But more specifically, Flatiron Students using WSL.
 
 # What is the Windows Subsystem for Linux? 
+
 The Windows Subsystem for Linux (WSL) lets developers run a Linux environment directly on Windows 10 without the overhead of a virtual machine. It’s an unmodified OS, but highly integrated into Windows.
 
 WSL1 was groundbreaking and translated Linux system calls to Windows equivalents. This could be slow and several features weren’t available. WSL2 uses Hyper-V virtual machine technology so Linux compatibility is excellent and file access is up to 20x faster than before.
@@ -43,7 +44,9 @@ The Windows May 2020 update is essential — that’s version 2004 or above. Cho
 
 <br/>
 
-> *NOTE: Some PCs report that version 2004 is currently unavailable in the Windows Update panel. You won’t be able to upgrade until Microsoft has released a fix for your device.*
+> *NOTE: Some PCs report that version 2004 is currently unavailable in the Windows Update panel. Alternatively, you can try downloading the [Windows Update Assistant][]. If this does not work, you may not be able to upgrade until Microsoft has released a fix for your device*
+
+
 
 > *WARNING: Fiddling with your BIOS settings can trash your PC! Be careful when making changes. Consult your manufacturer’s help pages or search for online advice about your specific make and model.*
 
@@ -59,7 +62,9 @@ Finally, ensure your C: drive has at least 1GB of spare disk space — ideally m
 
 ## Updating and Configuring Windows 10 <a name="updating-and-configuring-windows-10"></a>
 
-1. Make sure to run: [Windows Update Assistant](https://www.microsoft.com/en-us/software-download/windows10ISO). When the update is complete, your system build should be greater than 19000. Please verify this is true before continuing.
+1. Make sure to run: [Windows Update Assistant][]. When the update is complete, your system build should be greater than 19000. Please verify this is true before continuing.
+
+[Windows Update Assistant](https://www.microsoft.com/en-us/software-download/windows10)
 
 <br/>
 
