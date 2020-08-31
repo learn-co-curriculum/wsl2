@@ -240,7 +240,7 @@ Okay, so now we can start setting up our Ubuntu system with Flatiron tools! Firs
 
 ## Ruby Version Manager <a name="rvm"></a>
 
-Next, we'll install [Ruby Version Manager](https://github.com/rvm/ubuntu_rvm), also known as RVM. I've purposefully listed commands 3 through 7 separately. Do not run them all at the same time -- run them in succession. The combined 5 commands will install RVM.
+Next, we'll install RVM, also known as RVM. I've purposefully listed commands 3 through 7 separately. Do not run them all at the same time -- run them in succession. The combined 5 commands will install RVM.
 
 3. Run:
     ```
@@ -727,6 +727,7 @@ right click and `Restart` it. If it is not running, right click it and
 2. [Microsoft Documentation: Windows Subsystem for Linux]( https://docs.microsoft.com/en-us/windows/wsl/install-win10)  
 3. [Basic Linux Commands](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)
 [The Complete Developer's Guide to Windows Subsystem for Linux 2](https://www.sitepoint.com/wsl2-windows-terminal/)
+4. [Ruby Version Manager](https://github.com/rvm/ubuntu_rvm)
 
 [VS Code]: https://code.visualstudio.com/download
 [WSL Installation Guide]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
