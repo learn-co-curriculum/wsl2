@@ -618,7 +618,7 @@ Now you have the directories you need! `learn open` should work seamlessly by ad
 3. download the new `.bashrc`
 
     ```
-    curl -R "https://raw.githubusercontent.com/Enoch2k2/flatiron-wsl-bashrc/master/.bashrc" >> $HOME/.bashrc
+    curl -R "https://raw.githubusercontent.com/flatiron-school/dotfiles/blob/master/.bashrc-windows" >> $HOME/.bashrc
     ```
 
 4. We'll use our converter to convert our bashrc to use the right unix endings:
