@@ -528,11 +528,11 @@ First things first, let's completely close VSCode, and Ubuntu. Then, let's re-op
 
 <br />
 
-  ```sh
-  ---
-  :learn_directory: "/Users/YOUR-UBUNTU-USERNAME/development/flatiron/labs"
-  :editor: code
-  ```
+    ```
+    ---
+    :learn_directory: "/Users/YOUR-UBUNTU-USERNAME/development/flatiron/labs"
+    :editor: code
+    ```
 
 <br/>
 
