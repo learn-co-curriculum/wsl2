@@ -586,95 +586,15 @@ Now you have the directories you need! `learn open` should work seamlessly by ad
 <br/>
 <br/>
 
---- 
 
-<br/>
-<br/>
 
-## Important Knowledge: Basic Use
+And you're all set! Try running `learn open` in your terminal. If you are currently on a lab that requires coding, `learn open` will find that lab, fork it, clone it, and open it in Visual Studio Code for you!
 
-Your terminal is actually accessing an Ubuntu Virtual Machine which is running
-inside of your Windows OS. If you ever `cd` in your terminal, you will be
-sent to the 'user home' of your Linux VM. That is also the default location you
-will be in when you open your Ubuntu app. You actually want to do all of your
-business inside of your normal Windows file space, not your Linux VM file space.
-So, you will need to know how to navigate in your terminal from your Ubuntu file
-system to your Windows file system. This is pretty simple if you understand how
-the system is set up, so let's go over that quickly.
-
-To allow you to access the functionality of a Linux machine, Windows stores the
-Ubuntu OS and file system inside of its own file system. You should NEVER access
-your Ubuntu files via your Windows machine. What you SHOULD do is save
-everything you are working on in your normal Windows filespace, and access that
-via your Ubuntu terminal. So, how do you do that? Well, from the Ubuntu's point
-of view, it is just a normal Linux machine, but Microsoft has made a pathway
-between the Linux VM and your Windows OS via the `/mnt` directory in your
-Ubuntu's root.
-
-Here is a quick visual of what the first few levels of any Linux filesystem look
-like:  
-
-![linux file system](https://curriculum-content.s3.amazonaws.com/setup-instructions/linux_fs.png)
-
-As you can see, the `mnt` directory is made for other filesystems, so that is
-where Microsoft connected your Linux to your Windows machine:
-
-![linux file system](https://curriculum-content.s3.amazonaws.com/setup-instructions/linux_fs_path.png)
-
-So, you can get there from your starting point by typing:
-
-```
-cd /mnt/c/users/YOUR-WINDOWS-USERNAME
-```
-
-or
-
-```
-cd ../../mnt/c/users/YOUR-WINDOWS-USERNAME
-```
-
-Remember, put all of your stuff in your windows directories! That way, you have
-access to it via your Linux Terminal or your Windows OS, and your VSCode editor
-can open to the correct location when you use
-
-```
-code .
-```
-
-(if you are in your Linux file system, VSCode will open, but not to the right spot).
-
-<br/>
-<br/>
-
---- 
-
-<br/>
-<br/>
-
-## FAQ
-
-If you get the error: `Windows Subsystem for Linux has no installed
-distributions. Distributions can be installed by visiting the Windows Store:
-https://aka.ms/wslstore Press any key to continue...`
-
-1. Search for 'Services' in your Windows search bar, open it up  
-
-![find services ](https://curriculum-content.s3.amazonaws.com/setup-instructions/find_services.png)
-
-2. Scroll down to the `L` section, and find `LxssManager`. If it is running,
-right click and `Restart` it. If it is not running, right click it and
-`Start` it.  
-
-![Lxss Manager](https://curriculum-content.s3.amazonaws.com/setup-instructions/lxss_manager.png)
-
-[You can check out the github issue here](https://github.com/Microsoft/WSL/issues/2576)
-
-<br/>
 <br/>
 <br/>
 
 ---
-<br/>
+
 <br/>
 <br/>
 
