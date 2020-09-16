@@ -527,11 +527,11 @@ First things first, let's completely close VSCode, and Ubuntu. Then, let's re-op
 3. You want to update this file so that it looks similar to the text below: (With your username slightly different)
 <br />
 
-  ```
-  ---
-  :learn_directory: "/Users/YOUR-UBUNTU-USERNAME/development/flatiron/labs"
-  :editor: code
-  ```
+    ```
+    ---
+    :learn_directory: "/Users/YOUR-UBUNTU-USERNAME/development/flatiron/labs"
+    :editor: code
+    ```
 
 <br/>
 
