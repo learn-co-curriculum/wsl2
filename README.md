@@ -545,9 +545,9 @@ First things first, let's completely close VSCode, and Ubuntu. Then, let's re-op
 You'll notice that we set up our `.learn-config` file with a path destination of `/Users/YOUR-UBUNTU-USERNAME/Development/Flatiron/labs`. For this to actually work, we have to make sure those folders exist in your Linux operating system. To do this, run the following command in Ubuntu:
 
 1. Run: 
-  ```
+    ```
     cd ~ &&  mkdir development/flatiron && mkdir development/flatiron/labs && rm -rf ~/development/code
-  ```
+    ```
 
 <br/>
 
