@@ -62,9 +62,8 @@ Finally, ensure your C: drive has at least 1GB of spare disk space — ideally m
 
 ## Updating and Configuring Windows 10 <a name="updating-and-configuring-windows-10"></a>
 
-1. Make sure to run: [Windows Update Assistant][]. When the update is complete, your system build should be greater than 19000. Please verify this is true before continuing.
+1. Make sure to run: [Windows Update Assistant](https://www.microsoft.com/en-us/software-download/windows10). When the update is complete, your system build should be greater than 19000. Please verify this is true before continuing.
 
-[Windows Update Assistant](https://www.microsoft.com/en-us/software-download/windows10)
 
 <br/>
 
@@ -420,9 +419,9 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
 
 2. To configure your Ubuntu terminal to be available in VSCode:
 
-    - open up VSCode
-    - open the Command Palette via `F1` or &nbsp; `Ctrl` &nbsp; + &nbsp; `Shift` &nbsp; + &nbsp; `p`
-    - begin typing the following: `Terminal: Select Default Shell`  until you
+    - Open VSCode
+    - Open the Command Palette via `F1` or &nbsp; `Ctrl` &nbsp; + &nbsp; `Shift` &nbsp; + &nbsp; `p`
+    - Begin typing the following: `Terminal: Select Default Shell`  until you
       see it. Select that option.
 
 <br />
@@ -433,7 +432,7 @@ As VSCode is installing, make sure to check all check boxes so that it installs 
 
 <br/>
 
-    - Once you select it, a few options will pop up. You want to select WSL Bash C:\WINDOWS\System32\wsl.exe.
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     ◦ Once you select it, a few options will pop up. You want to select &nbsp; `WSL Bash C:\WINDOWS\System32\wsl.exe`.
 
 <br />
 
@@ -476,7 +475,14 @@ You will know the process is complete once you have some randomly generated ASCI
   This should print out a really long string of characters starting with *ssh*. It will look *something like this*:
 
   ```
-  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDI0n1zGPzhpwJRCwn0KeI8BybeyZP1XJWaGnvBMJNfzvXVhRGX5TxZ6Aq2hvHtDVE0ST9O1L2PU802RN5in6mpwCWoeJx9HXKoI3KW1nAYMJH8LjR1I2nbm7cSZjg732CdElc3uwTMf0cU7S2oocH5vTYpBT20NsdfsdsdfsdQaHdfAlop6VVckZKNZbPLNiW1MO2rk7Hw1j6r6bDM1nFwV+uDzxJ7+uEBXpl6bsxVn7X8AmwZdLSYz6wTq1lXWTy46tfkkFPNFyu5akkYoTym3jnQpKdW6AOVl89dXfRira4+DF7mQt3+kcfqHVsC7nN4s5T2Ju2KrVYiKF4yo89CXd7Yu6EQx7JeRlw+kxtzgYo1enMnp4hAawgxCkWlEqWyJQkNVZ6Wq+/gcHezJr2PoUc3lTX61TUcoCXV3QkjJDmnsSiwVDUqypCEBtNZyKMX5ZjSESPaj24C3F/yOdWIQu40iUR8oOT86Xo9+waR/nIobxaqWLJ4I8vfVqXsrh0ZTU= dharmon@skynet.attlocal.net
+  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDI0n1zGPzhpwJRCwn0KeI8BybeyZP1XJWaGnv
+  BMJNfzvXVhRGX5TxZ6Aq2hvHtDVE0ST9O1L2PU802RN5in6mpwCWoeJx9HXKoI3KW1nAYMJH8Lj
+  R1I2nbm7cSZjg732CdElc3uwTMf0cU7S2oocH5vTYpBT20NsdfsdsdfsdQaHdfAlop6VVckZKNZ
+  bPLNiW1MO2rk7Hw1j6r6bDM1nFwV+uDzxJ7+uEBXpl6bsxVn7X8AmwZdLSYz6wTq1lXWTy46tfk
+  kFPNFyu5akkYoTym3jnQpKdW6AOVl89dXfRira4+DF7mQt3+kcfqHVsC7nN4s5T2Ju2KrVYiKF4
+  yo89CXd7Yu6EQx7JeRlw+kxtzgYo1enMnp4hAawgxCkWlEqWyJQkNVZ6Wq+/gcHezJr2PoUc3lT
+  X61TUcoCXV3QkjJDmnsSiwVDUqypCEBtNZyKMX5ZjSESPaj24C3F/yOdWIQu40iUR8oOT86Xo9+
+  waR/nIobxaqWLJ4I8vfVqXsrh0ZTU= dharmon@skynet.attlocal.net
   ```
 
   <p align="center">
@@ -496,7 +502,7 @@ You will know the process is complete once you have some randomly generated ASCI
 <br />
 
 <p align="center">
-  <img  src="./images/sshkeysnew.png">
+  <img  width="550" src="./images/sshkeysnew.png">
 </p>
 
 <br />
@@ -510,43 +516,20 @@ You will know the process is complete once you have some randomly generated ASCI
 ## Updating Learn Config <a name="learn-config"></a>
 First things first, let's completely close VSCode, and Ubuntu. Then, let's re-open only Ubuntu.
 
-1. Let's find your Windows 10 username. To do so, we will have to use **Command Prompt** again. Open the Command Prompt app and run: 
-
-    ```
-    echo %username%
-    ```
-
-    You can close Command Prompt (Just remember to write down your Windows 10 username.). 
-
-<p align="center">
-  <img  src="./images/echousername.gif">
-</p>
-
-  <br/>
-
-2. Back in your **Ubuntu Terminal**, run: 
+1. Reopen Ubuntu and run:
 
     ```
     code ~/.learn-config
     ```
+
     This command  _should_ open a `.learn-config` config file in VSCode.
 
-3. You want to update this file so that it looks EXACTLY the same as below (except for YOUR-WINDOWS-USERNAME of course)
+3. You want to update this file so that it looks similar to the text below: (With your username slightly different)
 <br />
-
-**NOTE**:
-
-If your username contains any spaces in it, you will need to escape them in your .learn-config file. There are a couple ways to do this, the easiest is with a backslash. For example if my username was "Dwayne Harmon", I could escape the space between my first and last name with a backslash, like so: `Dwayne\ Harmon`.
-In practice, the example would look like this: <br /> 
-`:learn_directory: "/mnt/c/Users/Dwayne\ Harmon/development/flatiron/labs"`.
-  
-<br/>
-
-In any event, update your .learn-config file.
 
   ```
   ---
-  :learn_directory: "/mnt/c/Users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
+  :learn_directory: "/Users/YOUR-UBUNTU-USERNAME/development/flatiron/labs"
   :editor: code
   ```
 
@@ -559,22 +542,13 @@ In any event, update your .learn-config file.
 
 ## Creating Flatiron Folders <a name="labs-directory"></a>
 
-You'll notice that we set up our `.learn-config` file earlier with a path destination of `/mnt/c/users/YOUR-WINDOWS-USERNAME/development/flatiron/labs`. For this to actually work, we have to make sure those folders exist in your computer. To do this, begin by navigating to your Windows 10 home directory:
+You'll notice that we set up our `.learn-config` file with a path destination of `/Users/YOUR-UBUNTU-USERNAME/Development/Flatiron/labs`. For this to actually work, we have to make sure those folders exist in your Linux operating system. To do this, run the following command in Ubuntu:
 
+1. Run: 
+  ```
+    cd ~ &&  mkdir development/flatiron && mkdir development/flatiron/labs && rm -rf ~/development/code
+  ```
 
-1. Run: &nbsp; &nbsp;  `cd /mnt/c/Users/YOUR-WINDOWS-USERNAME`
-
-<p align="center">
-  <img  src="./images/cd-users-folder.gif">
-</p>
-
-Now, let's make the appropriate files. `mkdir` creates a new directory
-which will be a subdirectory of the current directory location of your terminal.
-
-2. Run the entire block below:
-```
-mkdir development && mkdir development/flatiron && mkdir development/flatiron/labs && cd ~
-```
 <br/>
 
 Now you have the directories you need! `learn open` should work seamlessly by adding your most current lab to the
