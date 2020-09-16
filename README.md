@@ -525,6 +525,7 @@ First things first, let's completely close VSCode, and Ubuntu. Then, let's re-op
     This command  _should_ open a `.learn-config` config file in VSCode.
 
 3. You want to update this file so that it looks similar to the text below: (With your username slightly different)
+
 <br />
 
     ```sh
