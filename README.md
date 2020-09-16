@@ -502,7 +502,7 @@ You will know the process is complete once you have some randomly generated ASCI
 <br />
 
 <p align="center">
-  <img  width="550" src="./images/sshkeysnew.png">
+  <img  width="700" src="./images/sshkeysnew.png">
 </p>
 
 <br />
@@ -528,7 +528,7 @@ First things first, let's completely close VSCode, and Ubuntu. Then, let's re-op
 <br />
 
     ```
-    
+
     ---
     :learn_directory: "/Users/YOUR-UBUNTU-USERNAME/development/flatiron/labs"
     :editor: code
