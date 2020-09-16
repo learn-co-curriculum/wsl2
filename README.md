@@ -111,7 +111,7 @@ Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, t
  When that's complete, it should look like this:
 
 <p align="center">
-  <img width="800" src="./images/wsl-checklist.gif">
+  <img width="700" src="./images/wsl-checklist.gif">
 </p>
 
 <br/>
@@ -130,7 +130,7 @@ Windows Subsystem Linux (WSL) is **not** automatically enabled on windows. So, t
 <br/>
 
 <p align="center">
-  <img  src="./images/installing-ubuntu.gif">
+  <img  width="700" src="./images/installing-ubuntu.gif">
 </p>
 
 <br/>
@@ -164,7 +164,7 @@ Once you have set up a username and password, you should return to a normal bash
 <br/>
 
 <p align="center">
-  <img  src="./images/configuring-ubuntu.gif">
+  <img width="700" src="./images/configuring-ubuntu.gif">
 </p>
 
 <br/>
@@ -183,7 +183,7 @@ At this point, you've already installed WSL1, we just need to run a few commands
 <br/>
 
 <p align="center">
-  <img  src="./images/run-as-admin.gif">
+  <img width="700" src="./images/run-as-admin.gif">
 </p>
 
 <br/>
@@ -198,7 +198,7 @@ At this point, you've already installed WSL1, we just need to run a few commands
 <br/>
 
 <p align="center">
-  <img  src="./images/command-prompt-fun.gif">
+  <img  width="700" src="./images/command-prompt-fun.gif">
 </p>
 
 <br/>
@@ -486,7 +486,7 @@ You will know the process is complete once you have some randomly generated ASCI
   ```
 
   <p align="center">
-    <img  src="./images/ssh-key.gif">
+    <img  width="700" src="./images/ssh-key.gif">
   </p>
 
   ***Just keep in mind, yours will look *similar*... not the same!***
