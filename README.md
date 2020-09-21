@@ -15,7 +15,7 @@ equivalents. This could be slow and several features weren’t available. WSL2
 uses Hyper-V virtual machine technology so Linux compatibility is excellent and
 file access is up to 20x faster than before.
 
-## Table of Contents:
+## Table of Contents
 
 0. [Windows 10 Requirements](#requirements)
 1. [Updating and Configuring Windows 10](#updating-and-configuring-windows-10)
