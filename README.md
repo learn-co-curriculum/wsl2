@@ -1,9 +1,10 @@
-Howdy neighbor. Have you heard the news about WSL2? As of June 2020, WSL is
-available to the general public. I figured this would be a good opportunity to
-share my findings with you, the general public. But more specifically, Flatiron
-Students using WSL.
+# Windows 10 Local Environment Set Up
 
-# What is the Windows Subsystem for Linux?
+In this lesson, we will walk through the process of setting up your Windows 10
+local environment. To do this, we will be using the Windows Subsystem for Linux
+to set up a Linux environment on your computer.
+
+## What is the Windows Subsystem for Linux?
 
 The Windows Subsystem for Linux (WSL) lets developers run a Linux environment
 directly on Windows 10 without the overhead of a virtual machine. It’s an
