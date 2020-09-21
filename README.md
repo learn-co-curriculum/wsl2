@@ -17,7 +17,7 @@ file access is up to 20x faster than before.
 ## Table of Contents:
 
 0. [Windows 10 Requirements](#requirements)
-1. [Updating and Configuring Windows 10](#updating-and-configuring-windows-10) 
+1. [Updating and Configuring Windows 10](#updating-and-configuring-windows-10)
 2. [Enabling Windows Subsystem for Linux (WSL) && Virtual Machine Platform](#enable-wsl2)
 3. [Installing Ubuntu](#install-ubuntu)
 4. [Upgrading to WSL Packages and Ubuntu Version](#upgrade-wsl)
@@ -46,15 +46,9 @@ The Windows May 2020 update is essential — that’s version 2004 or above. Cho
 the **Settings** cog from the Start menu, then select **System** followed by
 **About**. The Windows specifications are shown at the bottom of the panel:
 
-<br/>
-
 <p align="center">
-
   <img  src="./images/system-build.png">
-
 </p>
-
-<br/>
 
 Some PCs report that version 2004 is currently unavailable in the Windows Update
 panel. Alternatively, you can try downloading the [Windows Update Assistant][].
@@ -81,7 +75,6 @@ more. You may be able to free up some space in **Settings**, **System**,
 **Storage** or using the **Disk clean-up** tool in **Windows Administrative
 Tools**.
 
-
 <br/>
 <br/>
 
@@ -91,13 +84,11 @@ Tools**.
    your system build should be greater than 19000. Please verify this is true
    before continuing.
 
-[Windows Update Assistant](https://www.microsoft.com/en-us/software-download/windows10)
+    <p align="center">
+      <img height="600" src="./images/windows-10-update.png">
+    </p>
 
-<br/>
-
-<p align="center">
-  <img height="600" src="./images/windows-10-update.png">
-</p>
+[Windows Update Assistant]: https://www.microsoft.com/en-us/software-download/windows10
 
 <br/>
 <br/>
@@ -111,41 +102,29 @@ to start off, we need to enable it!
    Click on the result that matches your query. It will be in your Control
    Panel.  You should see something like this:
 
-<br/>
-
-<p align="center">
-  <img  width="450"src="https://curriculum-content.s3.amazonaws.com/setup-instructions/turn-windows-features-on-or-off.png">
-</p>
-
-<br/>
+    <p align="center">
+      <img  width="450"src="https://curriculum-content.s3.amazonaws.com/setup-instructions/turn-windows-features-on-or-off.png">
+    </p>
 
 2. Scroll down until you see "Windows Subsystem for Linux" - ensure its box is
    checked!
 
-<br/>
-
-<p align="center">
-  <img  width="450" src="https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-turnon.png">
-</p>  
-
-<br/>
+    <p align="center">
+      <img  width="450" src="https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-turnon.png">
+    </p>
 
 3. Scroll up a bit until you see "Virtual Machine Platform." Turn this feature
    on as well.
 
-<br/>
+    <p align="center">
+      <img  width="450" src="https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-virtual-machine-platform.png">
+    </p>  
 
-<p align="center">
-  <img  width="450" src="https://curriculum-content.s3.amazonaws.com/setup-instructions/wsl-virtual-machine-platform.png">
-</p>  
+   When that's complete, it should look like this:
 
- When that's complete, it should look like this:
-
-<p align="center">
-  <img width="800" src="./images/wsl-checklist.gif">
-</p>
-
-<br/>
+    <p align="center">
+      <img width="800" src="./images/wsl-checklist.gif">
+    </p>
 
 4. Click `ok`. This will prompt Windows to completely restart. Do so, grab some
    water, and let's continue!
@@ -157,33 +136,21 @@ to start off, we need to enable it!
 
 1. Open up [Microsoft Store][]. Search for "[Ubuntu][]"
 
-[Microsoft Store]: https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab
-[Ubuntu]: https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab
-
 2. Choose "Ubuntu" (do NOT choose 16.04 LTS, 18.04 LTS, or 20.04LTS)
 
-<br/>
-
-<p align="center">
-  <img  src="./images/installing-ubuntu.gif">
-</p>
-
-<br/>
-
+    <p align="center">
+      <img  src="./images/installing-ubuntu.gif">
+    </p>
 
 3. Search for, and open the newly installed Ubuntu application.
 
 4. Choose a username -- I suggest picking a really simple username (like a short
    nickname).
 
-<br/>
+    **NOTE:**
 
-**NOTE:**
-
-- Ubuntu will not accept capital letters in a username
-- Ubuntu will not accept numbers at the start of a username
-
-<br/>
+    - Ubuntu will not accept capital letters in a username
+    - Ubuntu will not accept numbers at the start of a username
 
 5. Choose a password -- I suggest picking a really really simple password.
 
@@ -192,7 +159,7 @@ to start off, we need to enable it!
 **NOTE:**
 
 - When you start typing a password, it will look as though nothing is happening.
-  Thats totally normal, it's just a security feature. 
+  Thats totally normal, it's just a security feature.
 - Type whatever password you would like, and press enter.
 - It will prompt you to confirm your password, retype the same password and hit
   enter.
@@ -202,14 +169,14 @@ to start off, we need to enable it!
 Once you have set up a username and password, you should return to a normal bash
 prompt (what does that even mean!?). It should look something like this:
 
-<br/>
-
 <p align="center">
   <img  src="./images/configuring-ubuntu.gif">
 </p>
 
 <br/>
-<br/>
+
+[Microsoft Store]: https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab
+[Ubuntu]: https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab
 
 ## Upgrading to WSL Packages and Ubuntu Version (via Command Prompt as Admin) <a name="upgrade-wsl"></a>
 
@@ -221,39 +188,30 @@ important.
    The package's name should be something along the lines of:
    `wsl_update_x64.msi`.
 
-[wslstorage]: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
-
 2. Double click on the package and follow the necessary prompts to install. (It
    should take approx 30 seconds to install.)
 
-3. Now, in your Windows Search bar, search for an application named `Command Prompt`. click **Run as Administrator**.
+3. Now, in your Windows Search bar, search for an application named `Command
+   Prompt`. click **Run as Administrator**.
 
-<br/>
-
-<p align="center">
-  <img  src="./images/run-as-admin.gif">
-</p>
-
-<br/>
+    <p align="center">
+      <img  src="./images/run-as-admin.gif">
+    </p>
 
 4. Inside Command Prompt (running as administrator), copy and paste the code
    below:
 
-    ```
+    ```sh
     wsl --set-default-version 2
     ```
 
-<br/>
+    <p align="center">
+      <img  src="./images/command-prompt-fun.gif">
+    </p>
 
-<p align="center">
-  <img  src="./images/command-prompt-fun.gif">
-</p>
+5. The following command will change your version of Ubuntu from 1, to 2. Run:
 
-<br/>
-
-5. The following command will change your version of Ubuntu from 1, to 2. Run: 
-
-    ```
+    ```sh
     wsl.exe --set-version Ubuntu 2
     ```
 
@@ -266,6 +224,8 @@ Let's move on to our Learn Local Environment installation.
 <br/>
 <br/>
 
+[wslstorage]: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
 ## Flatiron Tools <a name="flatiron-tools"></a>
 
 Okay, so now we can start setting up our Ubuntu system with Flatiron tools!
@@ -274,14 +234,14 @@ First, let's close and reopen Ubuntu. Then run the commands below.
 1. Run the following command in your Ubuntu terminal. This will make sure your
    currently installed packages in your Ubuntu system are up to date:
 
-    ```
+    ```sh
     sudo apt-get update
     ```
 
 2. Then run the following command to install a few important packages. (copy the
    entire block of code)
 
-    ```
+    ```sh
     sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev libpq-dev libgdbm-dev libncurses5-dev automake libtool bison gnupg postgresql postgresql-contrib
     ```
 
@@ -295,27 +255,32 @@ through 7 separately. Do not run them all at the same time -- run them in
 succession. The combined 5 commands will install RVM.
 
 3. Run:
-    ```
+
+    ```sh
     sudo apt-get install software-properties-common
     ```
 
 4. Run:
-    ```
+
+    ```sh
     sudo apt-add-repository -y ppa:rael-gc/rvm
     ```
 
 5. Run:
-    ```
+
+    ```sh
     sudo apt-get update
     ```
 
 6. Run:
-    ```
+
+    ```sh
     sudo apt-get install rvm
     ```
 
 7. Run:
-    ```
+
+    ```sh
     source ~/.bashrc
     ```
 
@@ -328,13 +293,13 @@ labs, we want to download ruby 2.6.1 and set it as our default:
 8. This following will install Ruby version 2.6.1, which is what Flatiron uses
    for its curriculum. Run:
 
-    ```
+    ```sh
     rvm install 2.6.1
     ```
 
 9. The following will set Ruby version `2.6.1` to be our default Ruby. Run:
 
-    ```
+    ```sh
     rvm use 2.6.1 --default
     ```
 
@@ -347,7 +312,7 @@ labs, we want to download ruby 2.6.1 and set it as our default:
     [Bundler](https://rubygems.org/gems/bundler). (follow the hyperlink if you
     are curious as to what Bundler does) Run:
 
-    ```
+    ```sh
     gem install bundler
     ```
 
@@ -355,7 +320,7 @@ labs, we want to download ruby 2.6.1 and set it as our default:
     test*", and "*learn submit*". For more information on the [Learn gem][],
     follow that hyperlink! Run:
 
-    ```
+    ```sh
     gem install learn-co -v 3.9.6
     ```
 
@@ -364,7 +329,7 @@ labs, we want to download ruby 2.6.1 and set it as our default:
 **NOTE:** After installing the Learn gem, you will get a weird error that looks
 something like:
 
-```
+```sh
   RDoc is not a full Ruby parser and will fail when fed invalid ruby programs.
 
   The internal error was:
@@ -397,7 +362,7 @@ part of the configuration now, and another part later!
   - Copy your token and paste it into terminal. <br/> If all goes well, your
     terminal _should_ display some information about you, similar to this:
 
-    ```
+    ```sh
     ➜ learn whoami
     Connecting to Learn...
     Authenticating...
@@ -410,7 +375,7 @@ part of the configuration now, and another part later!
 12. The following will install the lovely debugging tool [Pry][]. Seriously ask
     yourself, where would you be without [Pry][]!? Run:
 
-    ```
+    ```sh
     gem install pry
     ```
 
@@ -420,14 +385,14 @@ part of the configuration now, and another part later!
 
 [Rails]: https://rubygems.org/gems/rails
 
-    ```
+    ```sh
     gem install rails
     ```
 
 
 14. [Nokogiri][] has many uses -- You will primarily use it to scrape websites so definitely install it and check out the documentation. Run:
 
-    ```
+    ```sh
     gem install nokogiri
     ```
 [Nokogiri]: https://rubygems.org/gems/nokogiri
@@ -444,7 +409,7 @@ control!
     enter these commands, your terminal will not say anything -- don't worry, it
     definitely worked! Run:
 
-    ```
+    ```sh
     git config --global color.ui true
     ```
 
@@ -455,20 +420,20 @@ control!
     github username. For example, mine would look something like: &nbsp;  *git
     config --global user.name "dwyn"* &nbsp; Run:
 
-    ```
+    ```sh
     git config --global user.name YOUR_GITHUB_USER_NAME
     ```
 
     Alternatively, you could just put your first and last name, like so:
 
-    ```
+    ```sh
     git config --global user.name "First_Name Last_Name"
     ```
 
 17. The following is essentially repeating the same process, but with the email
     address tied to your github account. Run
 
-    ```
+    ```sh
     git config --global user.email YOUR_GITHUB_EMAIL_ADDRESS
     ```
 
@@ -488,19 +453,19 @@ in a browser.
 
 20. The following will install NVM, baby! &nbsp; Run:
 
-    ```
+    ```sh
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
     ```
 
 21. Let's refresh your terminal! &nbsp; Run:
 
-    ```
+    ```sh
     source ~/.bashrc
     ```
 
 22. The following will install Node.JS! Run:
 
-    ```
+    ```sh
     nvm install node
     ```
 
@@ -574,8 +539,9 @@ for your entire system.
   and password everytime you run &nbsp; *learn save* , &nbsp; *learn submit* ,
   or any other commands `push` code to GitHub.
 
-1. Run: 
-    ```
+1. Run:
+
+    ```sh
     ssh-keygen
     ```
 
@@ -589,14 +555,15 @@ You will know the process is complete once you have some randomly generated
 ASCII art in your terminal. Now, let's retrieve the contents of that file.
 
 2. Run:
-    ```
+
+    ```sh
     cat ~/.ssh/id_rsa.pub
     ```
 
   This should print out a really long string of characters starting with *ssh*.
   It will look *something like this*:
 
-  ```
+  ```sh
   ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDI0n1zGPzhpwJRCwn0KeI8BybeyZP1XJWaGnvBMJNfzvXVhRGX5TxZ6Aq2hvHtDVE0ST9O1L2PU802RN5in6mpwCWoeJx9HXKoI3KW1nAYMJH8LjR1I2nbm7cSZjg732CdElc3uwTMf0cU7S2oocH5vTYpBT20NsdfsdsdfsdQaHdfAlop6VVckZKNZbPLNiW1MO2rk7Hw1j6r6bDM1nFwV+uDzxJ7+uEBXpl6bsxVn7X8AmwZdLSYz6wTq1lXWTy46tfkkFPNFyu5akkYoTym3jnQpKdW6AOVl89dXfRira4+DF7mQt3+kcfqHVsC7nN4s5T2Ju2KrVYiKF4yo89CXd7Yu6EQx7JeRlw+kxtzgYo1enMnp4hAawgxCkWlEqWyJQkNVZ6Wq+/gcHezJr2PoUc3lTX61TUcoCXV3QkjJDmnsSiwVDUqypCEBtNZyKMX5ZjSESPaj24C3F/yOdWIQu40iUR8oOT86Xo9+waR/nIobxaqWLJ4I8vfVqXsrh0ZTU= dharmon@skynet.attlocal.net
   ```
 
@@ -639,7 +606,7 @@ re-open only Ubuntu.
 1. Let's find your Windows 10 username. To do so, we will have to use **Command
    Prompt** again. Open the Command Prompt app and run: 
 
-    ```
+    ```sh
     echo %username%
     ```
 
@@ -653,9 +620,10 @@ re-open only Ubuntu.
 
 2. Back in your **Ubuntu Terminal**, run:
 
-    ```
+    ```sh
     code ~/.learn-config
     ```
+
     This command  _should_ open a `.learn-config` config file in VSCode.
 
 3. You want to update this file so that it looks EXACTLY the same as below
@@ -676,7 +644,7 @@ Harmon`. In practice, the example would look like this: <br />
 
 In any event, update your .learn-config file.
 
-    ```
+    ```sh
     ---
     :learn_directory: "/mnt/c/Users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
     :editor: code
@@ -696,21 +664,17 @@ destination of `/mnt/c/users/YOUR-WINDOWS-USERNAME/development/flatiron/labs`.
 For this to actually work, we have to make sure those folders exist in your
 computer. To do this, begin by navigating to your Windows 10 home directory:
 
-
 1. Run: &nbsp; &nbsp;  `cd /mnt/c/Users/YOUR-WINDOWS-USERNAME`
-
-<p align="center">
-  <img  src="./images/cd-users-folder.gif">
-</p>
 
 Now, let's make the appropriate files. `mkdir` creates a new directory which
 will be a subdirectory of the current directory location of your terminal.
 
 2. Run the entire block below:
 
-```
-mkdir development && mkdir development/flatiron && mkdir development/flatiron/labs && cd ~
-```
+    ```sh
+    mkdir development && mkdir development/flatiron && mkdir development/flatiron/labs && cd ~
+    ```
+
 <br/>
 
 Now you have the directories you need! `learn open` should work seamlessly by
@@ -723,33 +687,33 @@ adding your most current lab to the `labs` directory we just made.
 
 1. Start out by making a backup for your `.bashrc`
 
-    ```
+    ```sh
     mv .bashrc .bashrc.bak
     ```
 
 2. We will want a tool for converting Windows endings to Unix endings for our new
 `.bashrc`
 
-    ```
+    ```sh
     sudo apt-get install dos2unix
     ```
 
 3. download the new `.bashrc`
 
-    ```
+    ```sh
     curl -R "https://raw.githubusercontent.com/flatiron-school/dotfiles/blob/master/.bashrc-windows" >> $HOME/.bashrc
     ```
 
 4. We'll use our converter to convert our bashrc to use the right unix endings:
 
-    ```
+    ```sh
     dos2unix .bashrc
     ```
 
 <br/>
 <br/>
 
---- 
+---
 
 <br/>
 <br/>
@@ -786,13 +750,13 @@ where Microsoft connected your Linux to your Windows machine:
 
 So, you can get there from your starting point by typing:
 
-```
+```sh
 cd /mnt/c/users/YOUR-WINDOWS-USERNAME
 ```
 
 or
 
-```
+```sh
 cd ../../mnt/c/users/YOUR-WINDOWS-USERNAME
 ```
 
@@ -800,7 +764,7 @@ Remember, put all of your stuff in your windows directories! That way, you have
 access to it via your Linux Terminal or your Windows OS, and your VSCode editor
 can open to the correct location when you use
 
-```
+```sh
 code .
 ```
 
