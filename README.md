@@ -56,14 +56,17 @@ the **Settings** cog from the Start menu, then select **System** followed by
 
 <br/>
 
-> *NOTE: Some PCs report that version 2004 is currently unavailable in the
-> Windows Update panel. Alternatively, you can try downloading the [Windows
-> Update Assistant][]. If this does not work, you may not be able to upgrade
-> until Microsoft has released a fix for your device*
+Some PCs report that version 2004 is currently unavailable in the Windows Update
+panel. Alternatively, you can try downloading the [Windows Update Assistant][].
+If this does not work, you may not be able to upgrade until Microsoft has
+released a fix for your device. If you are on Windows 10, but cannot upgrade,
+[follow these instructions for setting up WSL1][wsl1 instructions].
 
-> *WARNING: Fiddling with your BIOS settings can trash your PC! Be careful when
+[wsl1 instructions]: https://github.com/learn-co-curriculum/wsl-setup
+
+> **WARNING:** Fiddling with your BIOS settings can trash your PC! Be careful when
 > making changes. Consult your manufacturer’s help pages or search for online
-> advice about your specific make and model.*
+> advice about your specific make and model.
 
 <br/>
 
