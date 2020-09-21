@@ -497,9 +497,9 @@ for your entire system.
 
 2. To configure your Ubuntu terminal to be available in VSCode:
 
-    - open up VSCode
-    - open the Command Palette via `F1` or &nbsp; `Ctrl` &nbsp; + &nbsp; `Shift` &nbsp; + &nbsp; `p`
-    - begin typing the following: `Terminal: Select Default Shell`  until you
+    - Open VSCode
+    - Open the Command Palette via `F1` or &nbsp; `Ctrl` &nbsp; + &nbsp; `Shift` &nbsp; + &nbsp; `p`
+    - Begin typing the following: `Terminal: Select Default Shell`  until you
       see it. Select that option.
 
 <br />
@@ -510,7 +510,7 @@ for your entire system.
 
 <br/>
 
-    - Once you select it, a few options will pop up. You want to select WSL Bash C:\WINDOWS\System32\wsl.exe.
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     ◦ Once you select it, a few options will pop up. You want to select &nbsp; `WSL Bash C:\WINDOWS\System32\wsl.exe`.
 
 <br />
 
@@ -563,12 +563,19 @@ ASCII art in your terminal. Now, let's retrieve the contents of that file.
   This should print out a really long string of characters starting with *ssh*.
   It will look *something like this*:
 
-  ```sh
-  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDI0n1zGPzhpwJRCwn0KeI8BybeyZP1XJWaGnvBMJNfzvXVhRGX5TxZ6Aq2hvHtDVE0ST9O1L2PU802RN5in6mpwCWoeJx9HXKoI3KW1nAYMJH8LjR1I2nbm7cSZjg732CdElc3uwTMf0cU7S2oocH5vTYpBT20NsdfsdsdfsdQaHdfAlop6VVckZKNZbPLNiW1MO2rk7Hw1j6r6bDM1nFwV+uDzxJ7+uEBXpl6bsxVn7X8AmwZdLSYz6wTq1lXWTy46tfkkFPNFyu5akkYoTym3jnQpKdW6AOVl89dXfRira4+DF7mQt3+kcfqHVsC7nN4s5T2Ju2KrVYiKF4yo89CXd7Yu6EQx7JeRlw+kxtzgYo1enMnp4hAawgxCkWlEqWyJQkNVZ6Wq+/gcHezJr2PoUc3lTX61TUcoCXV3QkjJDmnsSiwVDUqypCEBtNZyKMX5ZjSESPaj24C3F/yOdWIQu40iUR8oOT86Xo9+waR/nIobxaqWLJ4I8vfVqXsrh0ZTU= dharmon@skynet.attlocal.net
-  ```
+    ```
+    ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDI0n1zGPzhpwJRCwn0KeI8BybeyZP1XJWaGnv
+    BMJNfzvXVhRGX5TxZ6Aq2hvHtDVE0ST9O1L2PU802RN5in6mpwCWoeJx9HXKoI3KW1nAYMJH8Lj
+    R1I2nbm7cSZjg732CdElc3uwTMf0cU7S2oocH5vTYpBT20NsdfsdsdfsdQaHdfAlop6VVckZKNZ
+    bPLNiW1MO2rk7Hw1j6r6bDM1nFwV+uDzxJ7+uEBXpl6bsxVn7X8AmwZdLSYz6wTq1lXWTy46tfk
+    kFPNFyu5akkYoTym3jnQpKdW6AOVl89dXfRira4+DF7mQt3+kcfqHVsC7nN4s5T2Ju2KrVYiKF4
+    yo89CXd7Yu6EQx7JeRlw+kxtzgYo1enMnp4hAawgxCkWlEqWyJQkNVZ6Wq+/gcHezJr2PoUc3lT
+    X61TUcoCXV3QkjJDmnsSiwVDUqypCEBtNZyKMX5ZjSESPaj24C3F/yOdWIQu40iUR8oOT86Xo9+
+    waR/nIobxaqWLJ4I8vfVqXsrh0ZTU= dharmon@skynet.attlocal.net
+    ```
 
   <p align="center">
-    <img  src="./images/ssh-key.gif">
+    <img  width="700" src="./images/ssh-key.gif">
   </p>
 
   ***Just keep in mind, yours will look *similar*... not the same!***
@@ -587,7 +594,7 @@ ASCII art in your terminal. Now, let's retrieve the contents of that file.
 <br />
 
 <p align="center">
-  <img  src="./images/sshkeysnew.png">
+  <img  width="700" src="./images/sshkeysnew.png">
 </p>
 
 <br />
@@ -599,56 +606,25 @@ ASCII art in your terminal. Now, let's retrieve the contents of that file.
 <br/>
 
 ## Updating Learn Config <a name="learn-config"></a>
+First things first, let's completely close VSCode, and Ubuntu. Then, let's re-open only Ubuntu.
 
-First things first, let's completely close VSCode, and Ubuntu. Then, let's
-re-open only Ubuntu.
+1. Reopen Ubuntu and run:
 
-1. Let's find your Windows 10 username. To do so, we will have to use **Command
-   Prompt** again. Open the Command Prompt app and run: 
-
-    ```sh
-    echo %username%
     ```
-
-    You can close Command Prompt (Just remember to write down your Windows 10 username.). 
-
-<p align="center">
-  <img  src="./images/echousername.gif">
-</p>
-
-  <br/>
-
-2. Back in your **Ubuntu Terminal**, run:
-
-    ```sh
     code ~/.learn-config
     ```
 
     This command  _should_ open a `.learn-config` config file in VSCode.
 
-3. You want to update this file so that it looks EXACTLY the same as below
-   (except for YOUR-WINDOWS-USERNAME of course)
+3. You want to update this file so that it looks similar to the text below: (With your username slightly different)
 
 <br />
 
-**NOTE**:
-
-If your username contains any spaces in it, you will need to escape them in your
-.learn-config file. There are a couple ways to do this, the easiest is with a
-backslash. For example if my username was "Dwayne Harmon", I could escape the
-space between my first and last name with a backslash, like so: `Dwayne\
-Harmon`. In practice, the example would look like this: <br />
-`:learn_directory: "/mnt/c/Users/Dwayne\ Harmon/development/flatiron/labs"`.
-  
-<br/>
-
-In any event, update your .learn-config file.
-
-    ```sh
-    ---
-    :learn_directory: "/mnt/c/Users/YOUR-WINDOWS-USERNAME/development/flatiron/labs"
-    :editor: code
-    ```
+  ```
+  ---
+  :learn_directory: "/Users/YOUR-UBUNTU-USERNAME/development/flatiron/labs"
+  :editor: code
+  ```
 
 <br/>
 
@@ -659,26 +635,17 @@ In any event, update your .learn-config file.
 
 ## Creating Flatiron Folders <a name="labs-directory"></a>
 
-You'll notice that we set up our `.learn-config` file earlier with a path
-destination of `/mnt/c/users/YOUR-WINDOWS-USERNAME/development/flatiron/labs`.
-For this to actually work, we have to make sure those folders exist in your
-computer. To do this, begin by navigating to your Windows 10 home directory:
+You'll notice that we set up our `.learn-config` file with a path destination of `/Users/YOUR-UBUNTU-USERNAME/Development/Flatiron/labs`. For this to actually work, we have to make sure those folders exist in your Linux operating system. To do this, run the following command in Ubuntu:
 
-1. Run: &nbsp; &nbsp;  `cd /mnt/c/Users/YOUR-WINDOWS-USERNAME`
-
-Now, let's make the appropriate files. `mkdir` creates a new directory which
-will be a subdirectory of the current directory location of your terminal.
-
-2. Run the entire block below:
-
-    ```sh
-    mkdir development && mkdir development/flatiron && mkdir development/flatiron/labs && cd ~
+1. Run: 
+    ```
+    cd ~ &&  mkdir development/flatiron && mkdir development/flatiron/labs && rm -rf ~/development/code
     ```
 
 <br/>
 
-Now you have the directories you need! `learn open` should work seamlessly by
-adding your most current lab to the `labs` directory we just made.
+Now you have the directories you need! `learn open` should work seamlessly by adding your most current lab to the
+`labs` directory we just made.
 
 <br/>
 <br/>
@@ -694,7 +661,7 @@ adding your most current lab to the `labs` directory we just made.
 2. We will want a tool for converting Windows endings to Unix endings for our new
 `.bashrc`
 
-    ```sh
+    ```
     sudo apt-get install dos2unix
     ```
 
@@ -709,99 +676,18 @@ adding your most current lab to the `labs` directory we just made.
     ```sh
     dos2unix .bashrc
     ```
+<br/>
+<br/>
+
+
+
+And you're all set! Try running `learn open` in your terminal. If you are currently on a lab that requires coding, `learn open` will find that lab, fork it, clone it, and open it in Visual Studio Code for you!
 
 <br/>
 <br/>
 
 ---
 
-<br/>
-<br/>
-
-## Important Knowledge: Basic Use
-
-Your terminal is actually accessing an Ubuntu Virtual Machine which is running
-inside of your Windows OS. If you ever `cd` in your terminal, you will be sent
-to the 'user home' of your Linux VM. That is also the default location you will
-be in when you open your Ubuntu app. You actually want to do all of your
-business inside of your normal Windows file space, not your Linux VM file space.
-So, you will need to know how to navigate in your terminal from your Ubuntu file
-system to your Windows file system. This is pretty simple if you understand how
-the system is set up, so let's go over that quickly.
-
-To allow you to access the functionality of a Linux machine, Windows stores the
-Ubuntu OS and file system inside of its own file system. You should NEVER access
-your Ubuntu files via your Windows machine. What you SHOULD do is save
-everything you are working on in your normal Windows filespace, and access that
-via your Ubuntu terminal. So, how do you do that? Well, from the Ubuntu's point
-of view, it is just a normal Linux machine, but Microsoft has made a pathway
-between the Linux VM and your Windows OS via the `/mnt` directory in your
-Ubuntu's root.
-
-Here is a quick visual of what the first few levels of any Linux filesystem look
-like:  
-
-![linux file system](https://curriculum-content.s3.amazonaws.com/setup-instructions/linux_fs.png)
-
-As you can see, the `mnt` directory is made for other filesystems, so that is
-where Microsoft connected your Linux to your Windows machine:
-
-![linux file system](https://curriculum-content.s3.amazonaws.com/setup-instructions/linux_fs_path.png)
-
-So, you can get there from your starting point by typing:
-
-```sh
-cd /mnt/c/users/YOUR-WINDOWS-USERNAME
-```
-
-or
-
-```sh
-cd ../../mnt/c/users/YOUR-WINDOWS-USERNAME
-```
-
-Remember, put all of your stuff in your windows directories! That way, you have
-access to it via your Linux Terminal or your Windows OS, and your VSCode editor
-can open to the correct location when you use
-
-```sh
-code .
-```
-
-(if you are in your Linux file system, VSCode will open, but not to the right spot).
-
-<br/>
-<br/>
-
---- 
-
-<br/>
-<br/>
-
-## FAQ
-
-If you get the error: `Windows Subsystem for Linux has no installed
-distributions. Distributions can be installed by visiting the Windows Store:
-https://aka.ms/wslstore Press any key to continue...`
-
-1. Search for 'Services' in your Windows search bar, open it up  
-
-![find services ](https://curriculum-content.s3.amazonaws.com/setup-instructions/find_services.png)
-
-2. Scroll down to the `L` section, and find `LxssManager`. If it is running,
-right click and `Restart` it. If it is not running, right click it and
-`Start` it.  
-
-![Lxss Manager](https://curriculum-content.s3.amazonaws.com/setup-instructions/lxss_manager.png)
-
-[You can check out the github issue here](https://github.com/Microsoft/WSL/issues/2576)
-
-<br/>
-<br/>
-<br/>
-
----
-<br/>
 <br/>
 <br/>
 
@@ -816,4 +702,3 @@ right click and `Restart` it. If it is not running, right click it and
 [VS Code]: https://code.visualstudio.com/download
 [WSL Installation Guide]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 [Hack font]: https://sourcefoundry.org/hack/
-[Pry]: https://rubygems.org/gems/pry
