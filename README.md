@@ -15,26 +15,6 @@ equivalents. This could be slow and several features weren’t available. WSL2
 uses Hyper-V virtual machine technology so Linux compatibility is excellent and
 file access is up to 20x faster than before.
 
-## Table of Contents
-
-0. [Windows 10 Requirements](#requirements)
-1. [Updating and Configuring Windows 10](#updating-and-configuring-windows-10)
-2. [Enabling Windows Subsystem for Linux (WSL) && Virtual Machine Platform](#enable-wsl2)
-3. [Installing Ubuntu](#install-ubuntu)
-4. [Upgrading to WSL Packages and Ubuntu Version](#upgrade-wsl)
-5. [Flatiron Local Environment Set Up](#flatiron-tools)
-6. [Install Ruby Version Manager](#rvm)
-7. [Gem Installations](#gems)
-8. [Configure Git](#git)
-9. [Node Version Manager](#nvm)
-10. [Visual Studio Code](#vscode)
-11. [Generating a SSH Key](#ssh)
-12. [Updating Learn Config](#learn-config)
-13. [Creating Flatiron Folders](#labs-directory)
-14. [Adding Flatiron Customization To Your Terminal](#customization)
-
-<br/>
-
 ---
 <br/>
 
@@ -566,7 +546,7 @@ ASCII art in your terminal. Now, let's retrieve the contents of that file.
 
     ```
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDI0n1zGPzhpwJRCwn0KeI8BybeyZP1XJWaGnv
-    BMJNfzvXVhRGX5TxZ6Aq2hvHtDVE0ST9O1L2PU802RN5in6mpwCWoeJx9HXKoI3KW1nAYMJH8Lj
+    BMJNfzvXVhRGX5TxZ6Aq2hvHtDVE0ST9O1L2PU802fakesshpwCWoeJx9HXKoI3KW1nAYMJH8Lj
     R1I2nbm7cSZjg732CdElc3uwTMf0cU7S2oocH5vTYpBT20NsdfsdsdfsdQaHdfAlop6VVckZKNZ
     bPLNiW1MO2rk7Hw1j6r6bDM1nFwV+uDzxJ7+uEBXpl6bsxVn7X8AmwZdLSYz6wTq1lXWTy46tfk
     kFPNFyu5akkYoTym3jnQpKdW6AOVl89dXfRira4+DF7mQt3+kcfqHVsC7nN4s5T2Ju2KrVYiKF4
